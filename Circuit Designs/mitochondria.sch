@@ -1,0 +1,2319 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "pectoralis major"
+Date ""
+Rev ""
+Comp "project Merophy"
+Comment1 "a.k.a. Electronic Speed Controller of one of the drone motors"
+Comment2 "This is one of the main propolsion sources of a bird"
+Comment3 "at the deltopectoral crest."
+Comment4 "The pectoralis is a large muscle that attaches to the humerus of the wing "
+$EndDescr
+Text HLabel 7050 4250 2    50   Input ~ 0
+GH_A
+Text HLabel 7050 4350 2    50   Input ~ 0
+SH_A
+Text HLabel 7050 4450 2    50   Input ~ 0
+GL_A
+Text HLabel 7050 4550 2    50   Input ~ 0
+SL_A
+Text HLabel 7050 4900 2    50   Input ~ 0
+GH_B
+Text HLabel 7050 5000 2    50   Input ~ 0
+SH_B
+Text HLabel 7050 5100 2    50   Input ~ 0
+GL_B
+Text HLabel 7050 5200 2    50   Input ~ 0
+SL_B
+Text HLabel 7050 5550 2    50   Input ~ 0
+GH_C
+Text HLabel 7050 5650 2    50   Input ~ 0
+SH_C
+Text HLabel 7050 5750 2    50   Input ~ 0
+GL_C
+Text HLabel 7050 5850 2    50   Input ~ 0
+SL_C
+Text HLabel 1150 1000 2    50   Input ~ 0
+SUPPLY
+Text HLabel 1050 1100 0    50   Input ~ 0
+BATT-
+Text HLabel 1050 1000 0    50   Input ~ 0
+BATT+
+Text HLabel 4800 5050 0    50   Input ~ 0
+INH_A
+Text HLabel 4800 5150 0    50   Input ~ 0
+INL_A
+Text HLabel 4800 5250 0    50   Input ~ 0
+INH_B
+Text HLabel 4800 5350 0    50   Input ~ 0
+INL_B
+Text HLabel 4800 5450 0    50   Input ~ 0
+INH_C
+Text HLabel 4800 5550 0    50   Input ~ 0
+INL_C
+Text HLabel 4800 4950 0    50   Input ~ 0
+EN_GATE
+Text HLabel 4850 4550 0    50   Input ~ 0
+SDO
+Text HLabel 4850 4450 0    50   Input ~ 0
+SDI
+Text HLabel 4850 4650 0    50   Input ~ 0
+SCK
+Text HLabel 4850 4350 0    50   Input ~ 0
+CS
+Text HLabel 950  7000 0    50   Input ~ 0
+SENS_A
+Text HLabel 3950 7000 0    50   Input ~ 0
+SENS_C
+Wire Wire Line
+	6650 4100 6600 4100
+Wire Wire Line
+	7000 4350 7000 4100
+Wire Wire Line
+	7050 4350 7000 4350
+Connection ~ 7000 4350
+Wire Wire Line
+	6650 4750 6600 4750
+Wire Wire Line
+	7000 5000 7000 4750
+Wire Wire Line
+	7050 5000 7000 5000
+Connection ~ 7000 5000
+Wire Wire Line
+	6650 5400 6600 5400
+Wire Wire Line
+	7000 5650 7000 5400
+Wire Wire Line
+	7050 5650 7000 5650
+Connection ~ 7000 5650
+Text Notes 7050 4150 0    28   ~ 0
+C BST_X : 0.1 μF (20%) ceramic, ≥ 16 V\ndatasheet @ page 15
+Text Notes 7050 4800 0    28   ~ 0
+C BST_X : 0.1 μF (20%) ceramic, ≥ 16 V\ndatasheet @ page 15
+Text Notes 7050 5450 0    28   ~ 0
+C BST_X : 0.1 μF (20%) ceramic, ≥ 16 V\ndatasheet @ page 15
+Text Notes 8100 3800 0    28   ~ 0
+C CP : 0.022 μF (20%) ceramic, rated for PVDD1 | datasheet @ page 15
+Text HLabel 9350 3900 2    50   Input ~ 0
+SUPPLY
+Text Notes 10250 4300 0    28   ~ 0
+C GVDD : 2.2 μF (20%) ceramic, ≥ 16 V\ndatasheet @ page 15
+$Comp
+L power:GND #PWR?
+U 1 1 619A93BE
+P 8100 4300
+F 0 "#PWR?" H 8100 4050 50  0001 C CNN
+F 1 "GND" H 8100 4150 50  0000 C CNN
+F 2 "" H 8100 4300 50  0001 C CNN
+F 3 "" H 8100 4300 50  0001 C CNN
+	1    8100 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4300 8100 4250
+$Comp
+L power:GND #PWR?
+U 1 1 619B446A
+P 8400 4300
+F 0 "#PWR?" H 8400 4050 50  0001 C CNN
+F 1 "GND" H 8400 4150 50  0000 C CNN
+F 2 "" H 8400 4300 50  0001 C CNN
+F 3 "" H 8400 4300 50  0001 C CNN
+	1    8400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4300 8400 4250
+$Comp
+L power:GND #PWR?
+U 1 1 620C3C87
+P 8700 4300
+F 0 "#PWR?" H 8700 4050 50  0001 C CNN
+F 1 "GND" H 8700 4150 50  0000 C CNN
+F 2 "" H 8700 4300 50  0001 C CNN
+F 3 "" H 8700 4300 50  0001 C CNN
+	1    8700 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4300 8700 4250
+Text Notes 8150 4600 0    28   ~ 0
+C PVDD1 : ≥4.7 μF (20%) ceramic, rated for PVDD1\ndatasheet @ page 15
+Wire Notes Line
+	6550 3500 11000 3500
+Wire Notes Line
+	4950 3500 600  3500
+$Comp
+L power:GND #PWR?
+U 1 1 620C3C8F
+P 6700 6200
+F 0 "#PWR?" H 6700 5950 50  0001 C CNN
+F 1 "GND" V 6600 6150 50  0000 C CNN
+F 2 "" H 6700 6200 50  0001 C CNN
+F 3 "" H 6700 6200 50  0001 C CNN
+	1    6700 6200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 6200 6650 6200
+Wire Wire Line
+	6650 6200 6650 6250
+Wire Wire Line
+	6650 6250 6600 6250
+Wire Wire Line
+	6650 6200 6650 6150
+Wire Wire Line
+	6650 6150 6600 6150
+Connection ~ 6650 6200
+Wire Wire Line
+	6650 6150 6650 6050
+Wire Wire Line
+	6650 6050 6600 6050
+Connection ~ 6650 6150
+Wire Wire Line
+	6650 6250 6650 6350
+Wire Wire Line
+	6650 6350 6600 6350
+Connection ~ 6650 6250
+Wire Wire Line
+	4850 4950 4800 4950
+$Comp
+L power:GND #PWR?
+U 1 1 61B426B8
+P 4150 5650
+F 0 "#PWR?" H 4150 5400 50  0001 C CNN
+F 1 "GND" V 4150 5450 50  0000 C CNN
+F 2 "" H 4150 5650 50  0001 C CNN
+F 3 "" H 4150 5650 50  0001 C CNN
+	1    4150 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 5650 4150 5650
+$Comp
+L power:VDDA #PWR?
+U 1 1 620C3CC0
+P 4150 5850
+F 0 "#PWR?" H 4150 5700 50  0001 C CNN
+F 1 "VDDA" V 4150 6100 50  0000 C CNN
+F 2 "" H 4150 5850 50  0001 C CNN
+F 3 "" H 4150 5850 50  0001 C CNN
+	1    4150 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 5850 4150 5850
+NoConn ~ 4900 5950
+NoConn ~ 4900 6150
+NoConn ~ 4900 6050
+$Comp
+L power:GND #PWR?
+U 1 1 620C3CC3
+P 4850 6400
+F 0 "#PWR?" H 4850 6150 50  0001 C CNN
+F 1 "GND" H 4850 6250 50  0000 C CNN
+F 2 "" H 4850 6400 50  0001 C CNN
+F 3 "" H 4850 6400 50  0001 C CNN
+	1    4850 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6400 4850 6350
+Wire Wire Line
+	4850 6350 4900 6350
+$Comp
+L power:GND #PWR?
+U 1 1 620C3CCB
+P 3200 4100
+F 0 "#PWR?" H 3200 3850 50  0001 C CNN
+F 1 "GND" H 3200 3950 50  0000 C CNN
+F 2 "" H 3200 4100 50  0001 C CNN
+F 3 "" H 3200 4100 50  0001 C CNN
+	1    3200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDDA #PWR?
+U 1 1 620C3CBF
+P 3200 3700
+F 0 "#PWR?" H 3200 3550 50  0001 C CNN
+F 1 "VDDA" H 3200 3850 50  0000 C CNN
+F 2 "" H 3200 3700 50  0001 C CNN
+F 3 "" H 3200 3700 50  0001 C CNN
+	1    3200 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 4150
+Wire Wire Line
+	4800 4150 4800 4250
+Wire Wire Line
+	4800 4250 4900 4250
+Text HLabel 4350 4250 0    50   Input ~ 0
+FAULT
+$Comp
+L power:+3V3 #PWR?
+U 1 1 620C3CF4
+P 4400 4150
+AR Path="/6171637A/620C3CF4" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/620C3CF4" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/620C3CF4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4400 4000 50  0001 C CNN
+F 1 "+3V3" V 4400 4350 50  0000 C CNN
+F 2 "" H 4400 4150 50  0001 C CNN
+F 3 "" H 4400 4150 50  0001 C CNN
+	1    4400 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 4150 4450 4150
+Wire Wire Line
+	3200 4100 3200 4050
+Wire Wire Line
+	3200 3700 3200 3750
+$Comp
+L power:GND #PWR?
+U 1 1 61E522A3
+P 4450 3650
+F 0 "#PWR?" H 4450 3400 50  0001 C CNN
+F 1 "GND" V 4450 3450 50  0000 C CNN
+F 2 "" H 4450 3650 50  0001 C CNN
+F 3 "" H 4450 3650 50  0001 C CNN
+	1    4450 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 3650 4500 3650
+Text Notes 3500 3650 0    28   ~ 0
+C DVDD : 1 μF (20%) ceramic, ≥6.3 V\ndatasheet @ page 15
+Wire Wire Line
+	4900 3850 3500 3850
+Wire Wire Line
+	3500 3750 3500 3850
+Text Notes 1950 4000 0    39   ~ 0
+C AVDD : 1 μF (20%) ceramic, ≥10 V\ndatasheet @ page 15
+Wire Wire Line
+	4850 4650 4900 4650
+Wire Wire Line
+	4900 4550 4850 4550
+Wire Wire Line
+	4850 4450 4900 4450
+Wire Wire Line
+	4900 4350 4850 4350
+$Comp
+L power:+3V3 #PWR?
+U 1 1 620C3D25
+P 2650 4700
+AR Path="/6171637A/620C3D25" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/620C3D25" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/620C3D25" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2650 4550 50  0001 C CNN
+F 1 "+3V3" H 2650 4850 50  0000 C CNN
+F 2 "" H 2650 4700 50  0001 C CNN
+F 3 "" H 2650 4700 50  0001 C CNN
+	1    2650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4750 3550 4800
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D2A
+P 2650 5150
+F 0 "#PWR?" H 2650 4900 50  0001 C CNN
+F 1 "GND" H 2650 5000 50  0000 C CNN
+F 2 "" H 2650 5150 50  0001 C CNN
+F 3 "" H 2650 5150 50  0001 C CNN
+	1    2650 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D2B
+P 3100 5150
+F 0 "#PWR?" H 3100 4900 50  0001 C CNN
+F 1 "GND" H 3100 5000 50  0000 C CNN
+F 2 "" H 3100 5150 50  0001 C CNN
+F 3 "" H 3100 5150 50  0001 C CNN
+	1    3100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D2C
+P 3550 5150
+F 0 "#PWR?" H 3550 4900 50  0001 C CNN
+F 1 "GND" H 3550 5000 50  0000 C CNN
+F 2 "" H 3550 5150 50  0001 C CNN
+F 3 "" H 3550 5150 50  0001 C CNN
+	1    3550 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5150 3550 5100
+Wire Wire Line
+	3100 5100 3100 5150
+Wire Wire Line
+	2650 5150 2650 5100
+$Comp
+L power:GND #PWR?
+U 1 1 6202D576
+P 6150 2500
+F 0 "#PWR?" H 6150 2250 50  0001 C CNN
+F 1 "GND" V 6150 2300 50  0000 C CNN
+F 2 "" H 6150 2500 50  0001 C CNN
+F 3 "" H 6150 2500 50  0001 C CNN
+	1    6150 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D30
+P 6150 2300
+F 0 "#PWR?" H 6150 2050 50  0001 C CNN
+F 1 "GND" V 6150 2100 50  0000 C CNN
+F 2 "" H 6150 2300 50  0001 C CNN
+F 3 "" H 6150 2300 50  0001 C CNN
+	1    6150 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D34
+P 6150 2100
+F 0 "#PWR?" H 6150 1850 50  0001 C CNN
+F 1 "GND" V 6150 1900 50  0000 C CNN
+F 2 "" H 6150 2100 50  0001 C CNN
+F 3 "" H 6150 2100 50  0001 C CNN
+	1    6150 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6205885B
+P 6150 1900
+F 0 "#PWR?" H 6150 1650 50  0001 C CNN
+F 1 "GND" V 6150 1700 50  0000 C CNN
+F 2 "" H 6150 1900 50  0001 C CNN
+F 3 "" H 6150 1900 50  0001 C CNN
+	1    6150 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 3000 6650 3000
+Wire Wire Line
+	6650 3000 6650 2500
+Wire Wire Line
+	6650 2500 6650 2300
+Connection ~ 6650 2500
+Wire Wire Line
+	6650 2300 6650 2100
+Connection ~ 6650 2300
+Wire Wire Line
+	6650 2100 6650 1900
+Connection ~ 6650 2100
+Text HLabel 6650 1850 1    50   Input ~ 0
+SUPPLY
+Wire Wire Line
+	6650 1850 6650 1900
+Connection ~ 6650 1900
+Text Notes 5750 1600 0    39   ~ 0
+C PVDD2 : ≥4.7 μF (20%) ceramic, \nrated for PVDD2\ndatasheet @ page 17
+$Comp
+L power:GND #PWR?
+U 1 1 6210CCF8
+P 6850 2950
+F 0 "#PWR?" H 6850 2700 50  0001 C CNN
+F 1 "GND" H 6850 2800 50  0000 C CNN
+F 2 "" H 6850 2950 50  0001 C CNN
+F 3 "" H 6850 2950 50  0001 C CNN
+	1    6850 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2900 6850 2950
+Wire Wire Line
+	6850 2700 6850 2650
+Wire Wire Line
+	6600 3100 6750 3100
+Wire Wire Line
+	6750 3100 6750 2650
+Wire Wire Line
+	6750 2650 6850 2650
+$Comp
+L power:+5V #PWR?
+U 1 1 62167CC3
+P 6850 2350
+AR Path="/6171648E/62167CC3" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/62167CC3" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/62167CC3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6850 2200 50  0001 C CNN
+F 1 "+5V" H 6850 2500 50  0000 C CNN
+F 2 "" H 6850 2350 50  0001 C CNN
+F 3 "" H 6850 2350 50  0001 C CNN
+	1    6850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2350 6850 2400
+Text Notes 6700 2150 0    39   ~ 0
+That terminal has around +5.3V\nTo create low-noise +5V, we \nneed 250mV space
+Wire Wire Line
+	7800 3200 7800 3300
+Wire Wire Line
+	7800 3150 7800 3200
+Connection ~ 7800 3200
+$Comp
+L power:+5V #PWR?
+U 1 1 62247E7C
+P 7800 1950
+AR Path="/6171648E/62247E7C" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/62247E7C" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/62247E7C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7800 1800 50  0001 C CNN
+F 1 "+5V" H 7800 2100 50  0000 C CNN
+F 2 "" H 7800 1950 50  0001 C CNN
+F 3 "" H 7800 1950 50  0001 C CNN
+	1    7800 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7800 2600
+Wire Wire Line
+	7800 2600 7800 2800
+Connection ~ 7800 2800
+Wire Wire Line
+	7800 2800 7800 2850
+Wire Wire Line
+	7600 3200 7800 3200
+Wire Wire Line
+	6600 3300 7800 3300
+Wire Wire Line
+	7800 2000 7800 2200
+$Comp
+L power:GND #PWR?
+U 1 1 620C3C5E
+P 8250 2000
+F 0 "#PWR?" H 8250 1750 50  0001 C CNN
+F 1 "GND" V 8250 1800 50  0000 C CNN
+F 2 "" H 8250 2000 50  0001 C CNN
+F 3 "" H 8250 2000 50  0001 C CNN
+	1    8250 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 2200 7800 2400
+Connection ~ 7800 2200
+Connection ~ 7800 2400
+Wire Wire Line
+	7800 2400 7800 2600
+Wire Wire Line
+	7800 1950 7800 2000
+Connection ~ 7800 2000
+$Comp
+L power:GND #PWR?
+U 1 1 619851BB
+P 8400 3300
+F 0 "#PWR?" H 8400 3050 50  0001 C CNN
+F 1 "GND" V 8400 3100 50  0000 C CNN
+F 2 "" H 8400 3300 50  0001 C CNN
+F 3 "" H 8400 3300 50  0001 C CNN
+	1    8400 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 3300 8300 3300
+Wire Wire Line
+	8000 3300 7800 3300
+Connection ~ 7800 3300
+NoConn ~ 4900 3000
+NoConn ~ 4900 3100
+$Comp
+L power:GND #PWR?
+U 1 1 620C3C99
+P 3300 3400
+F 0 "#PWR?" H 3300 3150 50  0001 C CNN
+F 1 "GND" V 3300 3200 50  0000 C CNN
+F 2 "" H 3300 3400 50  0001 C CNN
+F 3 "" H 3300 3400 50  0001 C CNN
+	1    3300 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3400 3350 3400
+$Comp
+L power:GND #PWR?
+U 1 1 620C3C9C
+P 4050 3300
+F 0 "#PWR?" H 4050 3050 50  0001 C CNN
+F 1 "GND" V 4050 3100 50  0000 C CNN
+F 2 "" H 4050 3300 50  0001 C CNN
+F 3 "" H 4050 3300 50  0001 C CNN
+	1    4050 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620C3CC1
+P 2850 3200
+F 0 "#PWR?" H 2850 2950 50  0001 C CNN
+F 1 "GND" V 2850 3000 50  0000 C CNN
+F 2 "" H 2850 3200 50  0001 C CNN
+F 3 "" H 2850 3200 50  0001 C CNN
+	1    2850 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 3200 2900 3200
+$Comp
+L power:GND #PWR?
+U 1 1 620C3CC2
+P 3300 2850
+F 0 "#PWR?" H 3300 2600 50  0001 C CNN
+F 1 "GND" V 3300 2650 50  0000 C CNN
+F 2 "" H 3300 2850 50  0001 C CNN
+F 3 "" H 3300 2850 50  0001 C CNN
+	1    3300 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 2850 3350 2850
+$Comp
+L power:GND #PWR?
+U 1 1 620C3CC9
+P 4400 4850
+F 0 "#PWR?" H 4400 4600 50  0001 C CNN
+F 1 "GND" V 4400 4650 50  0000 C CNN
+F 2 "" H 4400 4850 50  0001 C CNN
+F 3 "" H 4400 4850 50  0001 C CNN
+	1    4400 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 4850 4850 4950
+Wire Wire Line
+	4900 4950 4850 4950
+Connection ~ 4850 4950
+Wire Wire Line
+	3550 4750 4900 4750
+Wire Wire Line
+	4800 5050 4900 5050
+Wire Wire Line
+	4800 5150 4900 5150
+Wire Wire Line
+	4800 5250 4900 5250
+Wire Wire Line
+	4800 5350 4900 5350
+Wire Wire Line
+	4800 5450 4900 5450
+Wire Wire Line
+	4800 5550 4900 5550
+Wire Wire Line
+	1100 1000 1050 1000
+$Comp
+L power:GND #PWR?
+U 1 1 61F5E607
+P 1100 1150
+F 0 "#PWR?" H 1100 900 50  0001 C CNN
+F 1 "GND" H 1100 1000 50  0000 C CNN
+F 2 "" H 1100 1150 50  0001 C CNN
+F 3 "" H 1100 1150 50  0001 C CNN
+	1    1100 1150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1100 1100 1100
+Wire Wire Line
+	1100 1100 1100 1150
+$Comp
+L power:GND #PWR?
+U 1 1 621DB559
+P 1350 7400
+F 0 "#PWR?" H 1350 7150 50  0001 C CNN
+F 1 "GND" H 1350 7250 50  0000 C CNN
+F 2 "" H 1350 7400 50  0001 C CNN
+F 3 "" H 1350 7400 50  0001 C CNN
+	1    1350 7400
+	1    0    0    -1  
+$EndComp
+Text Notes 1500 7450 0    39   ~ 0
+fc= 27KHz
+Wire Wire Line
+	2450 7000 2500 7000
+Wire Wire Line
+	2500 7000 2500 6950
+Wire Wire Line
+	2500 7000 2500 7050
+Connection ~ 2500 7000
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D48
+P 2500 7400
+F 0 "#PWR?" H 2500 7150 50  0001 C CNN
+F 1 "GND" H 2500 7250 50  0000 C CNN
+F 2 "" H 2500 7400 50  0001 C CNN
+F 3 "" H 2500 7400 50  0001 C CNN
+	1    2500 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 7400 2500 7350
+Wire Wire Line
+	2500 6600 2500 6650
+$Comp
+L power:GND #PWR?
+U 1 1 621FC5A0
+P 2850 7400
+F 0 "#PWR?" H 2850 7150 50  0001 C CNN
+F 1 "GND" H 2850 7250 50  0000 C CNN
+F 2 "" H 2850 7400 50  0001 C CNN
+F 3 "" H 2850 7400 50  0001 C CNN
+	1    2850 7400
+	1    0    0    -1  
+$EndComp
+Text Notes 3000 7450 0    39   ~ 0
+fc= 27KHz
+Wire Wire Line
+	4000 6600 4000 6650
+$Comp
+L power:GND #PWR?
+U 1 1 6220BFED
+P 4350 7400
+F 0 "#PWR?" H 4350 7150 50  0001 C CNN
+F 1 "GND" H 4350 7250 50  0000 C CNN
+F 2 "" H 4350 7400 50  0001 C CNN
+F 3 "" H 4350 7400 50  0001 C CNN
+	1    4350 7400
+	1    0    0    -1  
+$EndComp
+Text Notes 4500 7450 0    39   ~ 0
+fc= 27KHz
+Text HLabel 1500 5100 1    50   Input ~ 0
+SUPPLY
+Text Notes 2000 5950 0    39   ~ 0
+fc= 27KHz
+Text HLabel 1400 5500 0    50   Input ~ 0
+SENS_SUPPLY
+Text HLabel 1000 6600 1    50   Input ~ 0
+SH_A
+Text HLabel 2500 6600 1    50   Input ~ 0
+SH_B
+Text HLabel 4000 6600 1    50   Input ~ 0
+SH_C
+Wire Wire Line
+	2900 1400 2850 1400
+Wire Wire Line
+	2850 1400 2850 1250
+Wire Wire Line
+	2850 1250 2900 1250
+Wire Wire Line
+	2550 1300 2550 1250
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D59
+P 2550 1650
+F 0 "#PWR?" H 2550 1400 50  0001 C CNN
+F 1 "GND" H 2550 1500 50  0000 C CNN
+F 2 "" H 2550 1650 50  0001 C CNN
+F 3 "" H 2550 1650 50  0001 C CNN
+	1    2550 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D5A
+P 2850 1650
+F 0 "#PWR?" H 2850 1400 50  0001 C CNN
+F 1 "GND" H 2850 1500 50  0000 C CNN
+F 2 "" H 2850 1650 50  0001 C CNN
+F 3 "" H 2850 1650 50  0001 C CNN
+	1    2850 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D5B
+P 2250 1650
+F 0 "#PWR?" H 2250 1400 50  0001 C CNN
+F 1 "GND" H 2250 1500 50  0000 C CNN
+F 2 "" H 2250 1650 50  0001 C CNN
+F 3 "" H 2250 1650 50  0001 C CNN
+	1    2250 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1550 2900 1550
+NoConn ~ 3600 1400
+Wire Wire Line
+	4050 1250 4050 1300
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D64
+P 4350 1650
+F 0 "#PWR?" H 4350 1400 50  0001 C CNN
+F 1 "GND" H 4350 1500 50  0000 C CNN
+F 2 "" H 4350 1650 50  0001 C CNN
+F 3 "" H 4350 1650 50  0001 C CNN
+	1    4350 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D65
+P 4050 1650
+F 0 "#PWR?" H 4050 1400 50  0001 C CNN
+F 1 "GND" H 4050 1500 50  0000 C CNN
+F 2 "" H 4050 1650 50  0001 C CNN
+F 3 "" H 4050 1650 50  0001 C CNN
+	1    4050 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1250 3750 1250
+Text Notes 3000 2000 0    39   ~ 0
+The pad connected to NR pin \nmust be as small as possible.\ndatasheet @ page 10
+$Comp
+L power:+5V #PWR?
+U 1 1 620C3D66
+P 2250 1200
+AR Path="/6171648E/620C3D66" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/620C3D66" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/620C3D66" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2250 1050 50  0001 C CNN
+F 1 "+5V" H 2250 1350 50  0000 C CNN
+F 2 "" H 2250 1200 50  0001 C CNN
+F 3 "" H 2250 1200 50  0001 C CNN
+	1    2250 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 62395A2B
+P 4350 1200
+AR Path="/6171637A/62395A2B" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/62395A2B" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/62395A2B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4350 1050 50  0001 C CNN
+F 1 "+3V3" H 4350 1350 50  0000 C CNN
+F 2 "" H 4350 1200 50  0001 C CNN
+F 3 "" H 4350 1200 50  0001 C CNN
+	1    4350 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1550 3650 1550
+Wire Wire Line
+	3750 1300 3750 1250
+Wire Wire Line
+	4050 1250 3750 1250
+Connection ~ 3750 1250
+Wire Wire Line
+	9000 1100 9000 1050
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D6C
+P 9000 1450
+F 0 "#PWR?" H 9000 1200 50  0001 C CNN
+F 1 "GND" H 9000 1300 50  0000 C CNN
+F 2 "" H 9000 1450 50  0001 C CNN
+F 3 "" H 9000 1450 50  0001 C CNN
+	1    9000 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62424FB8
+P 9400 1450
+F 0 "#PWR?" H 9400 1200 50  0001 C CNN
+F 1 "GND" H 9400 1300 50  0000 C CNN
+F 2 "" H 9400 1450 50  0001 C CNN
+F 3 "" H 9400 1450 50  0001 C CNN
+	1    9400 1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1350 9450 1350
+NoConn ~ 10150 1200
+Wire Wire Line
+	10600 1050 10600 1100
+$Comp
+L power:GND #PWR?
+U 1 1 62424FDE
+P 10600 1450
+F 0 "#PWR?" H 10600 1200 50  0001 C CNN
+F 1 "GND" H 10600 1300 50  0000 C CNN
+F 2 "" H 10600 1450 50  0001 C CNN
+F 3 "" H 10600 1450 50  0001 C CNN
+	1    10600 1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1050 10300 1050
+Text Notes 9550 1700 0    39   ~ 0
+The pad connected to NR pin \nmust be as small as possible.\ndatasheet @ page 10
+Wire Wire Line
+	10150 1350 10200 1350
+Wire Wire Line
+	10300 1100 10300 1050
+Wire Wire Line
+	10600 1050 10300 1050
+Connection ~ 10300 1050
+Wire Wire Line
+	9000 1050 9400 1050
+Wire Wire Line
+	9450 1150 9400 1150
+Wire Wire Line
+	9400 1150 9400 1050
+Connection ~ 9400 1050
+Wire Wire Line
+	9400 1050 9450 1050
+$Comp
+L power:GND #PWR?
+U 1 1 62492B9B
+P 9100 2750
+F 0 "#PWR?" H 9100 2500 50  0001 C CNN
+F 1 "GND" H 9100 2600 50  0000 C CNN
+F 2 "" H 9100 2750 50  0001 C CNN
+F 3 "" H 9100 2750 50  0001 C CNN
+	1    9100 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62492BA1
+P 9400 2750
+F 0 "#PWR?" H 9400 2500 50  0001 C CNN
+F 1 "GND" H 9400 2600 50  0000 C CNN
+F 2 "" H 9400 2750 50  0001 C CNN
+F 3 "" H 9400 2750 50  0001 C CNN
+	1    9400 2750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2650 9450 2650
+NoConn ~ 10150 2500
+Wire Wire Line
+	10600 2350 10600 2400
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D76
+P 10600 2750
+F 0 "#PWR?" H 10600 2500 50  0001 C CNN
+F 1 "GND" H 10600 2600 50  0000 C CNN
+F 2 "" H 10600 2750 50  0001 C CNN
+F 3 "" H 10600 2750 50  0001 C CNN
+	1    10600 2750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 2350 10300 2350
+Text Notes 9550 3000 0    39   ~ 0
+The pad connected to NR pin \nmust be as small as possible.\ndatasheet @ page 10
+Wire Wire Line
+	10150 2650 10200 2650
+Wire Wire Line
+	10300 2400 10300 2350
+Wire Wire Line
+	10600 2350 10300 2350
+Connection ~ 10300 2350
+Wire Wire Line
+	9450 2450 9400 2450
+Wire Wire Line
+	9400 2450 9400 2350
+Wire Wire Line
+	9400 2350 9450 2350
+$Comp
+L power:+5V #PWR?
+U 1 1 620C3D77
+P 9100 2300
+AR Path="/6171648E/620C3D77" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/620C3D77" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/620C3D77" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9100 2150 50  0001 C CNN
+F 1 "+5V" H 9100 2450 50  0000 C CNN
+F 2 "" H 9100 2300 50  0001 C CNN
+F 3 "" H 9100 2300 50  0001 C CNN
+	1    9100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6251F89A
+P 9000 1000
+AR Path="/6171648E/6251F89A" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/6251F89A" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/6251F89A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9000 850 50  0001 C CNN
+F 1 "+5V" H 9000 1150 50  0000 C CNN
+F 2 "" H 9000 1000 50  0001 C CNN
+F 3 "" H 9000 1000 50  0001 C CNN
+	1    9000 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1000 9000 1050
+Connection ~ 9000 1050
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 620C3D79
+P 10600 2300
+AR Path="/617163EE/620C3D79" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/620C3D79" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/620C3D79" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10600 2150 50  0001 C CNN
+F 1 "+3.3VA" H 10600 2450 50  0000 C CNN
+F 2 "" H 10600 2300 50  0001 C CNN
+F 3 "" H 10600 2300 50  0001 C CNN
+	1    10600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VA #PWR?
+U 1 1 6254A93E
+P 10600 1000
+AR Path="/617163EE/6254A93E" Ref="#PWR?"  Part="1" 
+AR Path="/617163B2/6254A93E" Ref="#PWR?"  Part="1" 
+AR Path="/620004EF/6254A93E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10600 850 50  0001 C CNN
+F 1 "+5VA" H 10600 1150 50  0000 C CNN
+F 2 "" H 10600 1000 50  0001 C CNN
+F 3 "" H 10600 1000 50  0001 C CNN
+	1    10600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 2300 10600 2350
+Connection ~ 10600 2350
+Wire Wire Line
+	10600 1000 10600 1050
+Connection ~ 10600 1050
+Text HLabel 1500 4500 0    50   Input ~ 0
+SENSE_FILTERED
+NoConn ~ 1500 4500
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 620C3C75
+P 1100 950
+F 0 "#FLG?" H 1100 1025 50  0001 C CNN
+F 1 "PWR_FLAG" H 1100 1123 50  0000 C CNN
+F 2 "" H 1100 950 50  0001 C CNN
+F 3 "~" H 1100 950 50  0001 C CNN
+	1    1100 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 950  1100 1000
+Wire Wire Line
+	1150 1000 1100 1000
+Connection ~ 1100 1000
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 61A008BF
+P 3550 3750
+F 0 "#FLG?" H 3550 3825 50  0001 C CNN
+F 1 "PWR_FLAG" V 3550 3878 50  0000 L CNN
+F 2 "" H 3550 3750 50  0001 C CNN
+F 3 "~" H 3550 3750 50  0001 C CNN
+	1    3550 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 3750 3500 3750
+Connection ~ 3500 3750
+Wire Wire Line
+	6850 2600 6850 2650
+Connection ~ 6850 2650
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 627ED7A2
+P 4350 1450
+F 0 "C?" H 4375 1550 50  0000 L CNN
+F 1 "1uF" H 4375 1350 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4350 1850 50  0001 C BNN
+F 3 "~" H 4350 1450 50  0001 C CNN
+F 4 "25V" H 4350 1450 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 4350 1025 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 4350 925 50  0001 C CNN "JLCPCB Part #"
+	1    4350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 627EDF34
+P 4050 1450
+F 0 "C?" H 4075 1550 50  0000 L CNN
+F 1 "1uF" H 4075 1350 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4050 1850 50  0001 C BNN
+F 3 "~" H 4050 1450 50  0001 C CNN
+F 4 "25V" H 4050 1450 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 4050 1025 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 4050 925 50  0001 C CNN "JLCPCB Part #"
+	1    4050 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 627EE3F7
+P 2550 1450
+F 0 "C?" H 2575 1550 50  0000 L CNN
+F 1 "1uF" H 2575 1350 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2550 1850 50  0001 C BNN
+F 3 "~" H 2550 1450 50  0001 C CNN
+F 4 "25V" H 2550 1450 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 2550 1025 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 2550 925 50  0001 C CNN "JLCPCB Part #"
+	1    2550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 627EEA6A
+P 2250 1450
+F 0 "C?" H 2275 1550 50  0000 L CNN
+F 1 "1uF" H 2275 1350 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2250 1850 50  0001 C BNN
+F 3 "~" H 2250 1450 50  0001 C CNN
+F 4 "25V" H 2250 1450 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 2250 1025 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 2250 925 50  0001 C CNN "JLCPCB Part #"
+	1    2250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 627EF911
+P 3750 1450
+F 0 "C?" H 3775 1550 50  0000 L CNN
+F 1 "100nF" H 3775 1350 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3750 1850 50  0001 C BNN
+F 3 "~" H 3750 1450 50  0001 C CNN
+F 4 "50V" H 3750 1450 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 3750 1025 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 3750 925 50  0001 C CNN "JLCPCB Part #"
+	1    3750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1600 3750 1650
+Wire Wire Line
+	3750 1650 3650 1650
+Wire Wire Line
+	3650 1650 3650 1550
+Wire Wire Line
+	4350 1200 4350 1250
+Wire Wire Line
+	4050 1250 4350 1250
+Connection ~ 4050 1250
+Connection ~ 4350 1250
+Wire Wire Line
+	4350 1250 4350 1300
+Wire Wire Line
+	2250 1200 2250 1250
+Wire Wire Line
+	2550 1250 2250 1250
+Connection ~ 2550 1250
+Connection ~ 2250 1250
+Wire Wire Line
+	2250 1250 2250 1300
+Wire Wire Line
+	2250 1650 2250 1600
+Wire Wire Line
+	2550 1650 2550 1600
+Wire Wire Line
+	2850 1650 2850 1550
+Wire Wire Line
+	2550 1250 2850 1250
+Connection ~ 2850 1250
+Wire Wire Line
+	4050 1650 4050 1600
+Wire Wire Line
+	4350 1650 4350 1600
+$Comp
+L CoE_Capacitor:22uF C?
+U 1 1 629BC92A
+P 6350 1900
+F 0 "C?" V 6300 1950 50  0000 L CNN
+F 1 "22uF" V 6300 1700 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6350 2300 50  0001 C BNN
+F 3 "~" H 6350 1900 50  0001 C CNN
+F 4 "25V" H 6350 1900 28  0000 C CNN "Voltage"
+F 5 "CL21A226MAQNNNE" H 6350 1475 50  0001 C CNN "MFR. Part #"
+F 6 "C45783" H 6350 1375 50  0001 C CNN "JLCPCB Part #"
+	1    6350 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L CoE_Capacitor:22uF C?
+U 1 1 629BE089
+P 6350 2100
+F 0 "C?" V 6300 2150 50  0000 L CNN
+F 1 "22uF" V 6300 1900 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6350 2500 50  0001 C BNN
+F 3 "~" H 6350 2100 50  0001 C CNN
+F 4 "25V" H 6350 2100 28  0000 C CNN "Voltage"
+F 5 "CL21A226MAQNNNE" H 6350 1675 50  0001 C CNN "MFR. Part #"
+F 6 "C45783" H 6350 1575 50  0001 C CNN "JLCPCB Part #"
+	1    6350 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L CoE_Capacitor:22uF C?
+U 1 1 629BE45C
+P 6350 2300
+F 0 "C?" V 6300 2350 50  0000 L CNN
+F 1 "22uF" V 6300 2100 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6350 2700 50  0001 C BNN
+F 3 "~" H 6350 2300 50  0001 C CNN
+F 4 "25V" H 6350 2300 28  0000 C CNN "Voltage"
+F 5 "CL21A226MAQNNNE" H 6350 1875 50  0001 C CNN "MFR. Part #"
+F 6 "C45783" H 6350 1775 50  0001 C CNN "JLCPCB Part #"
+	1    6350 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L CoE_Capacitor:22uF C?
+U 1 1 629BE8C1
+P 6350 2500
+F 0 "C?" V 6300 2550 50  0000 L CNN
+F 1 "22uF" V 6300 2300 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6350 2900 50  0001 C BNN
+F 3 "~" H 6350 2500 50  0001 C CNN
+F 4 "25V" H 6350 2500 28  0000 C CNN "Voltage"
+F 5 "CL21A226MAQNNNE" H 6350 2075 50  0001 C CNN "MFR. Part #"
+F 6 "C45783" H 6350 1975 50  0001 C CNN "JLCPCB Part #"
+	1    6350 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 1900 6150 1900
+Wire Wire Line
+	6200 2100 6150 2100
+Wire Wire Line
+	6200 2300 6150 2300
+Wire Wire Line
+	6200 2500 6150 2500
+Wire Wire Line
+	6500 2500 6650 2500
+Wire Wire Line
+	6500 2300 6650 2300
+Wire Wire Line
+	6500 2100 6650 2100
+Wire Wire Line
+	6500 1900 6650 1900
+$Comp
+L CoE_Capacitor:22uF C?
+U 1 1 62A91C3F
+P 8050 2000
+F 0 "C?" V 8000 2050 50  0000 L CNN
+F 1 "22uF" V 8000 1800 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8050 2400 50  0001 C BNN
+F 3 "~" H 8050 2000 50  0001 C CNN
+F 4 "25V" H 8050 2000 28  0000 C CNN "Voltage"
+F 5 "CL21A226MAQNNNE" H 8050 1575 50  0001 C CNN "MFR. Part #"
+F 6 "C45783" H 8050 1475 50  0001 C CNN "JLCPCB Part #"
+	1    8050 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 2000 7900 2000
+Wire Wire Line
+	8250 2000 8200 2000
+$Comp
+L power:GND #PWR?
+U 1 1 62ACC641
+P 8250 2200
+F 0 "#PWR?" H 8250 1950 50  0001 C CNN
+F 1 "GND" V 8250 2000 50  0000 C CNN
+F 2 "" H 8250 2200 50  0001 C CNN
+F 3 "" H 8250 2200 50  0001 C CNN
+	1    8250 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CoE_Capacitor:22uF C?
+U 1 1 62ACC64A
+P 8050 2200
+F 0 "C?" V 8000 2250 50  0000 L CNN
+F 1 "22uF" V 8000 2000 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8050 2600 50  0001 C BNN
+F 3 "~" H 8050 2200 50  0001 C CNN
+F 4 "25V" H 8050 2200 28  0000 C CNN "Voltage"
+F 5 "CL21A226MAQNNNE" H 8050 1775 50  0001 C CNN "MFR. Part #"
+F 6 "C45783" H 8050 1675 50  0001 C CNN "JLCPCB Part #"
+	1    8050 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 2200 8200 2200
+$Comp
+L power:GND #PWR?
+U 1 1 62ADEE1B
+P 8250 2400
+F 0 "#PWR?" H 8250 2150 50  0001 C CNN
+F 1 "GND" V 8250 2200 50  0000 C CNN
+F 2 "" H 8250 2400 50  0001 C CNN
+F 3 "" H 8250 2400 50  0001 C CNN
+	1    8250 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CoE_Capacitor:22uF C?
+U 1 1 62ADEE24
+P 8050 2400
+F 0 "C?" V 8000 2450 50  0000 L CNN
+F 1 "22uF" V 8000 2200 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8050 2800 50  0001 C BNN
+F 3 "~" H 8050 2400 50  0001 C CNN
+F 4 "25V" H 8050 2400 28  0000 C CNN "Voltage"
+F 5 "CL21A226MAQNNNE" H 8050 1975 50  0001 C CNN "MFR. Part #"
+F 6 "C45783" H 8050 1875 50  0001 C CNN "JLCPCB Part #"
+	1    8050 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 2400 8200 2400
+$Comp
+L power:GND #PWR?
+U 1 1 62AF1A5C
+P 8250 2600
+F 0 "#PWR?" H 8250 2350 50  0001 C CNN
+F 1 "GND" V 8250 2400 50  0000 C CNN
+F 2 "" H 8250 2600 50  0001 C CNN
+F 3 "" H 8250 2600 50  0001 C CNN
+	1    8250 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CoE_Capacitor:22uF C?
+U 1 1 62AF1A65
+P 8050 2600
+F 0 "C?" V 8000 2650 50  0000 L CNN
+F 1 "22uF" V 8000 2400 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8050 3000 50  0001 C BNN
+F 3 "~" H 8050 2600 50  0001 C CNN
+F 4 "25V" H 8050 2600 28  0000 C CNN "Voltage"
+F 5 "CL21A226MAQNNNE" H 8050 2175 50  0001 C CNN "MFR. Part #"
+F 6 "C45783" H 8050 2075 50  0001 C CNN "JLCPCB Part #"
+	1    8050 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 2600 8200 2600
+$Comp
+L power:GND #PWR?
+U 1 1 62B04699
+P 8250 2800
+F 0 "#PWR?" H 8250 2550 50  0001 C CNN
+F 1 "GND" V 8250 2600 50  0000 C CNN
+F 2 "" H 8250 2800 50  0001 C CNN
+F 3 "" H 8250 2800 50  0001 C CNN
+	1    8250 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CoE_Capacitor:22uF C?
+U 1 1 62B046A2
+P 8050 2800
+F 0 "C?" V 8000 2850 50  0000 L CNN
+F 1 "22uF" V 8000 2600 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8050 3200 50  0001 C BNN
+F 3 "~" H 8050 2800 50  0001 C CNN
+F 4 "25V" H 8050 2800 28  0000 C CNN "Voltage"
+F 5 "CL21A226MAQNNNE" H 8050 2375 50  0001 C CNN "MFR. Part #"
+F 6 "C45783" H 8050 2275 50  0001 C CNN "JLCPCB Part #"
+	1    8050 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 2800 8200 2800
+Wire Wire Line
+	7800 2800 7900 2800
+Wire Wire Line
+	7800 2600 7900 2600
+Wire Wire Line
+	7800 2400 7900 2400
+Wire Wire Line
+	7800 2200 7900 2200
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62B76970
+P 9100 2550
+F 0 "C?" H 9125 2650 50  0000 L CNN
+F 1 "1uF" H 9125 2450 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9100 2950 50  0001 C BNN
+F 3 "~" H 9100 2550 50  0001 C CNN
+F 4 "25V" H 9100 2550 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 9100 2125 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 9100 2025 50  0001 C CNN "JLCPCB Part #"
+	1    9100 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2750 9100 2700
+Wire Wire Line
+	9400 2650 9400 2750
+Wire Wire Line
+	10200 2650 10200 2750
+Wire Wire Line
+	10200 2750 10300 2750
+Wire Wire Line
+	10300 2750 10300 2700
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62C0D817
+P 10600 2550
+F 0 "C?" H 10625 2650 50  0000 L CNN
+F 1 "1uF" H 10625 2450 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10600 2950 50  0001 C BNN
+F 3 "~" H 10600 2550 50  0001 C CNN
+F 4 "25V" H 10600 2550 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 10600 2125 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 10600 2025 50  0001 C CNN "JLCPCB Part #"
+	1    10600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 2750 10600 2700
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 62C20DCA
+P 10300 2550
+F 0 "C?" H 10325 2650 50  0000 L CNN
+F 1 "100nF" H 10325 2450 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10300 2950 50  0001 C BNN
+F 3 "~" H 10300 2550 50  0001 C CNN
+F 4 "50V" H 10300 2550 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 10300 2125 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 10300 2025 50  0001 C CNN "JLCPCB Part #"
+	1    10300 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2300 9100 2350
+Wire Wire Line
+	9400 2350 9100 2350
+Connection ~ 9400 2350
+Connection ~ 9100 2350
+Wire Wire Line
+	9100 2350 9100 2400
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62C7F760
+P 9000 1250
+F 0 "C?" H 9025 1350 50  0000 L CNN
+F 1 "1uF" H 9025 1150 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9000 1650 50  0001 C BNN
+F 3 "~" H 9000 1250 50  0001 C CNN
+F 4 "25V" H 9000 1250 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 9000 825 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 9000 725 50  0001 C CNN "JLCPCB Part #"
+	1    9000 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1450 9000 1400
+Wire Wire Line
+	9400 1350 9400 1450
+Wire Wire Line
+	10200 1350 10200 1450
+Wire Wire Line
+	10200 1450 10300 1450
+Wire Wire Line
+	10300 1450 10300 1400
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 62D170D6
+P 10300 1250
+F 0 "C?" H 10325 1350 50  0000 L CNN
+F 1 "100nF" H 10325 1150 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10300 1650 50  0001 C BNN
+F 3 "~" H 10300 1250 50  0001 C CNN
+F 4 "50V" H 10300 1250 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 10300 825 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 10300 725 50  0001 C CNN "JLCPCB Part #"
+	1    10300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62D175A3
+P 10600 1250
+F 0 "C?" H 10625 1350 50  0000 L CNN
+F 1 "1uF" H 10625 1150 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10600 1650 50  0001 C BNN
+F 3 "~" H 10600 1250 50  0001 C CNN
+F 4 "25V" H 10600 1250 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 10600 825 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 10600 725 50  0001 C CNN "JLCPCB Part #"
+	1    10600 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 1450 10600 1400
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 62D51A91
+P 7450 3200
+F 0 "C?" V 7500 3050 50  0000 L CNN
+F 1 "100nF" V 7500 3250 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7450 3600 50  0001 C BNN
+F 3 "~" H 7450 3200 50  0001 C CNN
+F 4 "50V" H 7450 3200 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 7450 2775 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 7450 2675 50  0001 C CNN "JLCPCB Part #"
+	1    7450 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 3200 7300 3200
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62D7A9AC
+P 8100 4100
+F 0 "C?" H 8125 4200 50  0000 L CNN
+F 1 "1uF" H 8125 4000 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8100 4500 50  0001 C BNN
+F 3 "~" H 8100 4100 50  0001 C CNN
+F 4 "25V" H 8100 4100 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 8100 3675 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 8100 3575 50  0001 C CNN "JLCPCB Part #"
+	1    8100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62DA1065
+P 8400 4100
+F 0 "C?" H 8425 4200 50  0000 L CNN
+F 1 "1uF" H 8425 4000 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8400 4500 50  0001 C BNN
+F 3 "~" H 8400 4100 50  0001 C CNN
+F 4 "25V" H 8400 4100 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 8400 3675 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 8400 3575 50  0001 C CNN "JLCPCB Part #"
+	1    8400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62DA14E6
+P 8700 4100
+F 0 "C?" H 8725 4200 50  0000 L CNN
+F 1 "1uF" H 8725 4000 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8700 4500 50  0001 C BNN
+F 3 "~" H 8700 4100 50  0001 C CNN
+F 4 "25V" H 8700 4100 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 8700 3675 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 8700 3575 50  0001 C CNN "JLCPCB Part #"
+	1    8700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62DA194D
+P 9000 4100
+F 0 "C?" H 9025 4200 50  0000 L CNN
+F 1 "1uF" H 9025 4000 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9000 4500 50  0001 C BNN
+F 3 "~" H 9000 4100 50  0001 C CNN
+F 4 "25V" H 9000 4100 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 9000 3675 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 9000 3575 50  0001 C CNN "JLCPCB Part #"
+	1    9000 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62DA1E46
+P 9300 4100
+F 0 "C?" H 9325 4200 50  0000 L CNN
+F 1 "1uF" H 9325 4000 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9300 4500 50  0001 C BNN
+F 3 "~" H 9300 4100 50  0001 C CNN
+F 4 "25V" H 9300 4100 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 9300 3675 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 9300 3575 50  0001 C CNN "JLCPCB Part #"
+	1    9300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3950 8100 3900
+Connection ~ 8100 3900
+Wire Wire Line
+	8100 3900 8400 3900
+Wire Wire Line
+	8400 3950 8400 3900
+Connection ~ 8400 3900
+Wire Wire Line
+	8400 3900 8700 3900
+Wire Wire Line
+	8700 3950 8700 3900
+Connection ~ 8700 3900
+Wire Wire Line
+	8700 3900 9000 3900
+Wire Wire Line
+	9000 3950 9000 3900
+Connection ~ 9000 3900
+Wire Wire Line
+	9000 3900 9300 3900
+Wire Wire Line
+	9300 3950 9300 3900
+$Comp
+L power:GND #PWR?
+U 1 1 62E5003D
+P 9000 4300
+F 0 "#PWR?" H 9000 4050 50  0001 C CNN
+F 1 "GND" H 9000 4150 50  0000 C CNN
+F 2 "" H 9000 4300 50  0001 C CNN
+F 3 "" H 9000 4300 50  0001 C CNN
+	1    9000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 4300 9000 4250
+$Comp
+L power:GND #PWR?
+U 1 1 62E6329D
+P 9300 4300
+F 0 "#PWR?" H 9300 4050 50  0001 C CNN
+F 1 "GND" H 9300 4150 50  0000 C CNN
+F 2 "" H 9300 4300 50  0001 C CNN
+F 3 "" H 9300 4300 50  0001 C CNN
+	1    9300 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4300 9300 4250
+Wire Wire Line
+	9350 3900 9300 3900
+Connection ~ 9300 3900
+$Comp
+L CoE_Capacitor:10nF C?
+U 1 1 62F0C989
+P 9900 3900
+F 0 "C?" H 9925 4000 50  0000 L CNN
+F 1 "10nF" H 9925 3800 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9900 4300 50  0001 C BNN
+F 3 "~" H 9900 3900 50  0001 C CNN
+F 4 "50V" H 9900 3900 28  0000 C CNN "Voltage"
+F 5 "CL05B103KB5NNNC" H 9900 3475 50  0001 C CNN "MFR. Part #"
+F 6 "C15195" H 9900 3375 50  0001 C CNN "JLCPCB Part #"
+	1    9900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:10nF C?
+U 1 1 62F0D811
+P 10200 3900
+F 0 "C?" H 10225 4000 50  0000 L CNN
+F 1 "10nF" H 10225 3800 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10200 4300 50  0001 C BNN
+F 3 "~" H 10200 3900 50  0001 C CNN
+F 4 "50V" H 10200 3900 28  0000 C CNN "Voltage"
+F 5 "CL05B103KB5NNNC" H 10200 3475 50  0001 C CNN "MFR. Part #"
+F 6 "C15195" H 10200 3375 50  0001 C CNN "JLCPCB Part #"
+	1    10200 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3700 9900 3750
+Wire Wire Line
+	9900 3700 10200 3700
+Wire Wire Line
+	10200 3700 10200 3750
+Connection ~ 9900 3700
+Wire Wire Line
+	9750 3800 9750 4100
+Wire Wire Line
+	9750 4100 9900 4100
+Wire Wire Line
+	9900 4100 9900 4050
+Wire Wire Line
+	9900 4100 10200 4100
+Wire Wire Line
+	10200 4100 10200 4050
+Connection ~ 9900 4100
+$Comp
+L power:GND #PWR?
+U 1 1 62F6E6B6
+P 10550 4000
+F 0 "#PWR?" H 10550 3750 50  0001 C CNN
+F 1 "GND" H 10550 3850 50  0000 C CNN
+F 2 "" H 10550 4000 50  0001 C CNN
+F 3 "" H 10550 4000 50  0001 C CNN
+	1    10550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 4000 10550 3950
+$Comp
+L power:GND #PWR?
+U 1 1 62F6E6BD
+P 10850 4000
+F 0 "#PWR?" H 10850 3750 50  0001 C CNN
+F 1 "GND" H 10850 3850 50  0000 C CNN
+F 2 "" H 10850 4000 50  0001 C CNN
+F 3 "" H 10850 4000 50  0001 C CNN
+	1    10850 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 4000 10850 3950
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62F6E6C7
+P 10550 3800
+F 0 "C?" H 10575 3900 50  0000 L CNN
+F 1 "1uF" H 10575 3700 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10550 4200 50  0001 C BNN
+F 3 "~" H 10550 3800 50  0001 C CNN
+F 4 "25V" H 10550 3800 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 10550 3375 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 10550 3275 50  0001 C CNN "JLCPCB Part #"
+	1    10550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62F6E6D0
+P 10850 3800
+F 0 "C?" H 10875 3900 50  0000 L CNN
+F 1 "1uF" H 10875 3700 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10850 4200 50  0001 C BNN
+F 3 "~" H 10850 3800 50  0001 C CNN
+F 4 "25V" H 10850 3800 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 10850 3375 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 10850 3275 50  0001 C CNN "JLCPCB Part #"
+	1    10850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 3650 10550 3600
+Wire Wire Line
+	10850 3650 10850 3600
+Wire Wire Line
+	10550 3600 10850 3600
+Connection ~ 10550 3600
+Wire Wire Line
+	6600 3900 8100 3900
+Wire Wire Line
+	6600 3800 9750 3800
+Wire Wire Line
+	6600 3700 9900 3700
+Wire Wire Line
+	6600 3600 10550 3600
+Wire Wire Line
+	6600 4250 7050 4250
+Wire Wire Line
+	6600 4350 7000 4350
+Wire Wire Line
+	6600 4450 7050 4450
+Wire Wire Line
+	6600 4550 7050 4550
+Wire Wire Line
+	6600 4900 7050 4900
+Wire Wire Line
+	6600 5000 7000 5000
+Wire Wire Line
+	6600 5100 7050 5100
+Wire Wire Line
+	6600 5200 7050 5200
+Wire Wire Line
+	6600 5550 7050 5550
+Wire Wire Line
+	6600 5650 7000 5650
+Wire Wire Line
+	6600 5750 7050 5750
+Wire Wire Line
+	6600 5850 7050 5850
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 631182B8
+P 6800 4100
+AR Path="/620004B5/631182B8" Ref="C?"  Part="1" 
+AR Path="/620004EF/631182B8" Ref="C?"  Part="1" 
+F 0 "C?" V 6850 4050 50  0000 R CNN
+F 1 "100nF" V 6850 4150 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6800 4500 50  0001 C BNN
+F 3 "~" H 6800 4100 50  0001 C CNN
+F 4 "50V" H 6800 4100 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 6800 3675 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 6800 3575 50  0001 C CNN "JLCPCB Part #"
+	1    6800 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 6312A025
+P 6800 4750
+AR Path="/620004B5/6312A025" Ref="C?"  Part="1" 
+AR Path="/620004EF/6312A025" Ref="C?"  Part="1" 
+F 0 "C?" V 6850 4700 50  0000 R CNN
+F 1 "100nF" V 6850 4800 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6800 5150 50  0001 C BNN
+F 3 "~" H 6800 4750 50  0001 C CNN
+F 4 "50V" H 6800 4750 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 6800 4325 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 6800 4225 50  0001 C CNN "JLCPCB Part #"
+	1    6800 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 6312AD54
+P 6800 5400
+AR Path="/620004B5/6312AD54" Ref="C?"  Part="1" 
+AR Path="/620004EF/6312AD54" Ref="C?"  Part="1" 
+F 0 "C?" V 6850 5350 50  0000 R CNN
+F 1 "100nF" V 6850 5450 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6800 5800 50  0001 C BNN
+F 3 "~" H 6800 5400 50  0001 C CNN
+F 4 "50V" H 6800 5400 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 6800 4975 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 6800 4875 50  0001 C CNN "JLCPCB Part #"
+	1    6800 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 5400 7000 5400
+Wire Wire Line
+	6950 4750 7000 4750
+Wire Wire Line
+	6950 4100 7000 4100
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 62041CDD
+P 4650 3650
+F 0 "C?" V 4700 3500 50  0000 L CNN
+F 1 "1uF" V 4700 3700 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4650 4050 50  0001 C BNN
+F 3 "~" H 4650 3650 50  0001 C CNN
+F 4 "25V" H 4650 3650 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 4650 3225 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 4650 3125 50  0001 C CNN "JLCPCB Part #"
+	1    4650 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4800 3650 4900 3650
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 6209F732
+P 3200 3900
+F 0 "C?" H 3225 4000 50  0000 L CNN
+F 1 "1uF" H 3225 3800 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3200 4300 50  0001 C BNN
+F 3 "~" H 3200 3900 50  0001 C CNN
+F 4 "25V" H 3200 3900 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 3200 3475 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 3200 3375 50  0001 C CNN "JLCPCB Part #"
+	1    3200 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 4050
+Wire Wire Line
+	3200 3750 3500 3750
+Connection ~ 3200 3750
+Wire Wire Line
+	3500 3950 3500 4050
+Wire Wire Line
+	3500 3950 4900 3950
+Wire Wire Line
+	3200 4050 3500 4050
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 62135F1B
+P 2650 4950
+F 0 "C?" H 2675 5050 50  0000 L CNN
+F 1 "100nF" H 2675 4850 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2650 5350 50  0001 C BNN
+F 3 "~" H 2650 4950 50  0001 C CNN
+F 4 "50V" H 2650 4950 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 2650 4525 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 2650 4425 50  0001 C CNN "JLCPCB Part #"
+	1    2650 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 621368BA
+P 3100 4950
+F 0 "C?" H 3125 5050 50  0000 L CNN
+F 1 "100nF" H 3125 4850 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3100 5350 50  0001 C BNN
+F 3 "~" H 3100 4950 50  0001 C CNN
+F 4 "50V" H 3100 4950 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 3100 4525 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 3100 4425 50  0001 C CNN "JLCPCB Part #"
+	1    3100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 62136E0F
+P 3550 4950
+F 0 "C?" H 3575 5050 50  0000 L CNN
+F 1 "100nF" H 3575 4850 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3550 5350 50  0001 C BNN
+F 3 "~" H 3550 4950 50  0001 C CNN
+F 4 "50V" H 3550 4950 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 3550 4525 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 3550 4425 50  0001 C CNN "JLCPCB Part #"
+	1    3550 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4700 2650 4750
+Wire Wire Line
+	3100 4800 3100 4750
+Wire Wire Line
+	3100 4750 3550 4750
+Connection ~ 3550 4750
+Wire Wire Line
+	3100 4750 2650 4750
+Connection ~ 3100 4750
+Connection ~ 2650 4750
+Wire Wire Line
+	2650 4750 2650 4800
+$Comp
+L power:GND #PWR?
+U 1 1 6221C7C8
+P 1850 5900
+F 0 "#PWR?" H 1850 5650 50  0001 C CNN
+F 1 "GND" H 1850 5750 50  0000 C CNN
+F 2 "" H 1850 5900 50  0001 C CNN
+F 3 "" H 1850 5900 50  0001 C CNN
+	1    1850 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:100pF C?
+U 1 1 6221D2F5
+P 1350 7200
+F 0 "C?" H 1375 7300 50  0000 L CNN
+F 1 "100pF" H 1375 7100 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1350 7600 50  0001 C BNN
+F 3 "~" H 1350 7200 50  0001 C CNN
+F 4 "50V" H 1350 7200 28  0000 C CNN "Voltage"
+F 5 "0402CG101J500NT" H 1350 6775 50  0001 C CNN "MFR. Part #"
+F 6 "C1546" H 1350 6675 50  0001 C CNN "JLCPCB Part #"
+	1    1350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:100pF C?
+U 1 1 6225678B
+P 2850 7200
+F 0 "C?" H 2875 7300 50  0000 L CNN
+F 1 "100pF" H 2875 7100 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2850 7600 50  0001 C BNN
+F 3 "~" H 2850 7200 50  0001 C CNN
+F 4 "50V" H 2850 7200 28  0000 C CNN "Voltage"
+F 5 "0402CG101J500NT" H 2850 6775 50  0001 C CNN "MFR. Part #"
+F 6 "C1546" H 2850 6675 50  0001 C CNN "JLCPCB Part #"
+	1    2850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:100pF C?
+U 1 1 62268BA3
+P 4350 7200
+F 0 "C?" H 4375 7300 50  0000 L CNN
+F 1 "100pF" H 4375 7100 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4350 7600 50  0001 C BNN
+F 3 "~" H 4350 7200 50  0001 C CNN
+F 4 "50V" H 4350 7200 28  0000 C CNN "Voltage"
+F 5 "0402CG101J500NT" H 4350 6775 50  0001 C CNN "MFR. Part #"
+F 6 "C1546" H 4350 6675 50  0001 C CNN "JLCPCB Part #"
+	1    4350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:100pF C?
+U 1 1 6228C924
+P 3500 2850
+F 0 "C?" V 3550 2700 50  0000 L CNN
+F 1 "100pF" V 3550 2900 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3500 3250 50  0001 C BNN
+F 3 "~" H 3500 2850 50  0001 C CNN
+F 4 "50V" H 3500 2850 28  0000 C CNN "Voltage"
+F 5 "0402CG101J500NT" H 3500 2425 50  0001 C CNN "MFR. Part #"
+F 6 "C1546" H 3500 2325 50  0001 C CNN "JLCPCB Part #"
+	1    3500 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CoE_Capacitor:10nF C?
+U 1 1 622C3678
+P 4250 3300
+F 0 "C?" V 4300 3150 50  0000 L CNN
+F 1 "10nF" V 4300 3350 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4250 3700 50  0001 C BNN
+F 3 "~" H 4250 3300 50  0001 C CNN
+F 4 "50V" H 4250 3300 28  0000 C CNN "Voltage"
+F 5 "CL05B103KB5NNNC" H 4250 2875 50  0001 C CNN "MFR. Part #"
+F 6 "C15195" H 4250 2775 50  0001 C CNN "JLCPCB Part #"
+	1    4250 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 3300 4900 3300
+Wire Wire Line
+	4050 3300 4100 3300
+$Comp
+L CoE_Capacitor:6.8nF C?
+U 1 1 6230DB94
+P 3050 3200
+F 0 "C?" V 3100 3050 50  0000 L CNN
+F 1 "6.8nF" V 3100 3250 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3050 3600 50  0001 C BNN
+F 3 "~" H 3050 3200 50  0001 C CNN
+F 4 "50V" H 3050 3200 28  0000 C CNN "Voltage"
+F 5 "0402B682K500NT" H 3050 2775 50  0001 C CNN "MFR. Part #"
+F 6 "C1542" H 3050 2675 50  0001 C CNN "JLCPCB Part #"
+	1    3050 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CoE_Capacitor:100pF C?
+U 1 1 623346C8
+P 1850 5700
+F 0 "C?" H 1875 5800 50  0000 L CNN
+F 1 "100pF" H 1875 5600 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1850 6100 50  0001 C BNN
+F 3 "~" H 1850 5700 50  0001 C CNN
+F 4 "50V" H 1850 5700 28  0000 C CNN "Voltage"
+F 5 "0402CG101J500NT" H 1850 5275 50  0001 C CNN "MFR. Part #"
+F 6 "C1546" H 1850 5175 50  0001 C CNN "JLCPCB Part #"
+	1    1850 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4250 4800 4250
+Connection ~ 4800 4250
+Wire Wire Line
+	4800 4150 4750 4150
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 629BA3C5
+P 4600 4850
+F 0 "R?" V 4650 4650 50  0000 L CNN
+F 1 "10K" V 4650 4950 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4600 5250 50  0001 C BNN
+F 3 "~" H 4250 4700 50  0001 C CNN
+F 4 "1%" V 4600 4850 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 4600 4425 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 4600 4325 50  0001 C CNN "JLCPCB Part #"
+	1    4600 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 4850 4850 4850
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 629E04B4
+P 4600 4150
+F 0 "R?" V 4650 3950 50  0000 L CNN
+F 1 "10K" V 4650 4250 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4600 4550 50  0001 C BNN
+F 3 "~" H 4250 4000 50  0001 C CNN
+F 4 "1%" V 4600 4150 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 4600 3725 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 4600 3625 50  0001 C CNN "JLCPCB Part #"
+	1    4600 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 4850 4450 4850
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 62A35E83
+P 3550 4050
+F 0 "#FLG?" H 3550 4125 50  0001 C CNN
+F 1 "PWR_FLAG" V 3550 4177 50  0000 L CNN
+F 2 "" H 3550 4050 50  0001 C CNN
+F 3 "~" H 3550 4050 50  0001 C CNN
+	1    3550 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4050 3500 4050
+Connection ~ 3500 4050
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 62A93531
+P 4350 5650
+F 0 "R?" V 4400 5450 50  0000 L CNN
+F 1 "10K" V 4400 5750 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 6050 50  0001 C BNN
+F 3 "~" H 4000 5500 50  0001 C CNN
+F 4 "1%" V 4350 5650 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 4350 5225 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 4350 5125 50  0001 C CNN "JLCPCB Part #"
+	1    4350 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 5650 4900 5650
+$Comp
+L CoE_Resistor:0R R?
+U 1 1 62ADE5DF
+P 4350 5850
+F 0 "R?" V 4400 5650 50  0000 L CNN
+F 1 "0R" V 4400 5950 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4350 6250 50  0001 C BNN
+F 3 "~" H 4000 5700 50  0001 C CNN
+F 4 "1%" V 4350 5850 28  0000 C CNN "Tolerance"
+F 5 "0402WGF0000TCE" H 4350 5425 50  0001 C CNN "MFR. Part #"
+F 6 "C17168" H 4350 5325 50  0001 C CNN "JLCPCB Part #"
+	1    4350 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 5850 4900 5850
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 620BFF9F
+P 2500 6800
+F 0 "R?" H 2550 6850 50  0000 L CNN
+F 1 "10K" H 2550 6750 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2500 7200 50  0001 C BNN
+F 3 "~" H 2150 6650 50  0001 C CNN
+F 4 "1%" V 2500 6800 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 2500 6375 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 2500 6275 50  0001 C CNN "JLCPCB Part #"
+	1    2500 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Resistor:2.2K R?
+U 1 1 620C1103
+P 2500 7200
+F 0 "R?" H 2550 7250 50  0000 L CNN
+F 1 "2.2K" H 2550 7150 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2500 7600 50  0001 C BNN
+F 3 "~" H 2150 7050 50  0001 C CNN
+F 4 "1%" V 2500 7200 28  0000 C CNN "Tolerance"
+F 5 "0402WGF2201TCE" H 2500 6775 50  0001 C CNN "MFR. Part #"
+F 6 "C25879" H 2500 6675 50  0001 C CNN "JLCPCB Part #"
+	1    2500 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 7000 2850 7050
+Wire Wire Line
+	2500 7000 2850 7000
+Text HLabel 2450 7000 0    50   Input ~ 0
+SENS_B
+Wire Wire Line
+	3950 7000 4000 7000
+Wire Wire Line
+	4000 7000 4000 6950
+Wire Wire Line
+	4000 7000 4000 7050
+Connection ~ 4000 7000
+$Comp
+L power:GND #PWR?
+U 1 1 6215E471
+P 4000 7400
+F 0 "#PWR?" H 4000 7150 50  0001 C CNN
+F 1 "GND" H 4000 7250 50  0000 C CNN
+F 2 "" H 4000 7400 50  0001 C CNN
+F 3 "" H 4000 7400 50  0001 C CNN
+	1    4000 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 7400 4000 7350
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 6215E47C
+P 4000 6800
+F 0 "R?" H 4050 6850 50  0000 L CNN
+F 1 "10K" H 4050 6750 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4000 7200 50  0001 C BNN
+F 3 "~" H 3650 6650 50  0001 C CNN
+F 4 "1%" V 4000 6800 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 4000 6375 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 4000 6275 50  0001 C CNN "JLCPCB Part #"
+	1    4000 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Resistor:2.2K R?
+U 1 1 6215E485
+P 4000 7200
+F 0 "R?" H 4050 7250 50  0000 L CNN
+F 1 "2.2K" H 4050 7150 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4000 7600 50  0001 C BNN
+F 3 "~" H 3650 7050 50  0001 C CNN
+F 4 "1%" V 4000 7200 28  0000 C CNN "Tolerance"
+F 5 "0402WGF2201TCE" H 4000 6775 50  0001 C CNN "MFR. Part #"
+F 6 "C25879" H 4000 6675 50  0001 C CNN "JLCPCB Part #"
+	1    4000 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 7000 4350 7000
+Wire Wire Line
+	4350 7000 4350 7050
+Wire Wire Line
+	4350 7400 4350 7350
+Wire Wire Line
+	2850 7400 2850 7350
+Wire Wire Line
+	950  7000 1000 7000
+Wire Wire Line
+	1000 7000 1000 6950
+Wire Wire Line
+	1000 7000 1000 7050
+Connection ~ 1000 7000
+$Comp
+L power:GND #PWR?
+U 1 1 6227CEB3
+P 1000 7400
+F 0 "#PWR?" H 1000 7150 50  0001 C CNN
+F 1 "GND" H 1000 7250 50  0000 C CNN
+F 2 "" H 1000 7400 50  0001 C CNN
+F 3 "" H 1000 7400 50  0001 C CNN
+	1    1000 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 7400 1000 7350
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 6227CEBD
+P 1000 6800
+F 0 "R?" H 1050 6850 50  0000 L CNN
+F 1 "10K" H 1050 6750 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1000 7200 50  0001 C BNN
+F 3 "~" H 650 6650 50  0001 C CNN
+F 4 "1%" V 1000 6800 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 1000 6375 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 1000 6275 50  0001 C CNN "JLCPCB Part #"
+	1    1000 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Resistor:2.2K R?
+U 1 1 6227CEC6
+P 1000 7200
+F 0 "R?" H 1050 7250 50  0000 L CNN
+F 1 "2.2K" H 1050 7150 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1000 7600 50  0001 C BNN
+F 3 "~" H 650 7050 50  0001 C CNN
+F 4 "1%" V 1000 7200 28  0000 C CNN "Tolerance"
+F 5 "0402WGF2201TCE" H 1000 6775 50  0001 C CNN "MFR. Part #"
+F 6 "C25879" H 1000 6675 50  0001 C CNN "JLCPCB Part #"
+	1    1000 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 7000 1350 7000
+Wire Wire Line
+	1350 7000 1350 7050
+Wire Wire Line
+	1350 7400 1350 7350
+Wire Wire Line
+	1000 6600 1000 6650
+Wire Wire Line
+	1850 5900 1850 5850
+Wire Wire Line
+	1500 5500 1500 5450
+Wire Wire Line
+	1500 5500 1500 5550
+Connection ~ 1500 5500
+$Comp
+L power:GND #PWR?
+U 1 1 623E6EF5
+P 1500 5900
+F 0 "#PWR?" H 1500 5650 50  0001 C CNN
+F 1 "GND" H 1500 5750 50  0000 C CNN
+F 2 "" H 1500 5900 50  0001 C CNN
+F 3 "" H 1500 5900 50  0001 C CNN
+	1    1500 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5900 1500 5850
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 623E6EFF
+P 1500 5300
+F 0 "R?" H 1550 5350 50  0000 L CNN
+F 1 "10K" H 1550 5250 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1500 5700 50  0001 C BNN
+F 3 "~" H 1150 5150 50  0001 C CNN
+F 4 "1%" V 1500 5300 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 1500 4875 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 1500 4775 50  0001 C CNN "JLCPCB Part #"
+	1    1500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Resistor:2.2K R?
+U 1 1 623E6F08
+P 1500 5700
+F 0 "R?" H 1550 5750 50  0000 L CNN
+F 1 "2.2K" H 1550 5650 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1500 6100 50  0001 C BNN
+F 3 "~" H 1150 5550 50  0001 C CNN
+F 4 "1%" V 1500 5700 28  0000 C CNN "Tolerance"
+F 5 "0402WGF2201TCE" H 1500 5275 50  0001 C CNN "MFR. Part #"
+F 6 "C25879" H 1500 5175 50  0001 C CNN "JLCPCB Part #"
+	1    1500 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5500 1850 5500
+Wire Wire Line
+	1850 5500 1850 5550
+Wire Wire Line
+	1500 5100 1500 5150
+Wire Wire Line
+	1400 5500 1500 5500
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 6212AF20
+P 3500 3200
+F 0 "R?" V 3550 3000 50  0000 L CNN
+F 1 "10K" V 3550 3300 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3500 3600 50  0001 C BNN
+F 3 "~" H 3150 3050 50  0001 C CNN
+F 4 "1%" V 3500 3200 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 3500 2775 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 3500 2675 50  0001 C CNN "JLCPCB Part #"
+	1    3500 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 3200 3350 3200
+Wire Wire Line
+	3850 3200 3850 2850
+Connection ~ 3850 3200
+Wire Wire Line
+	3850 3200 4900 3200
+Wire Wire Line
+	3650 2850 3850 2850
+Wire Wire Line
+	3650 3200 3850 3200
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 621FC420
+P 3500 3400
+F 0 "R?" V 3550 3200 50  0000 L CNN
+F 1 "10K" V 3550 3500 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3500 3800 50  0001 C BNN
+F 3 "~" H 3150 3250 50  0001 C CNN
+F 4 "1%" V 3500 3400 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 3500 2975 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 3500 2875 50  0001 C CNN "JLCPCB Part #"
+	1    3500 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 3400 4900 3400
+$EndSCHEMATC

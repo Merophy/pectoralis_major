@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP INA199A1
+D 26-V, Bidirectional, Zero-Drift, Low-or High-Side, Voltage-Output, Current-Shunt Monitor
+K capacitor cap user
+F www.ti.com/lit/ds/symlink/ina199.pdf
+$ENDCMP
+#
+#End Doc Library

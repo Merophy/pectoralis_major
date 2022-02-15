@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name CoE_Capacitor)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_Capacitor.lib)(options "")(descr "Capacitors as CoEnzymes"))
+  (lib (name CoE_Resistor)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_Resistor.lib)(options "")(descr "Resistors as CoEnzymes"))
+  (lib (name CoE_IntegratedCircuit)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_IntegratedCircuit.lib)(options "")(descr "Integrated Circuits as CoEnzymes"))
+  (lib (name CoE-Transistor)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE-Transistor.lib)(options "")(descr "Transistors as CoEnzymes"))
+  (lib (name CoE_Diode)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_Diode.lib)(options "")(descr ""))
+)
