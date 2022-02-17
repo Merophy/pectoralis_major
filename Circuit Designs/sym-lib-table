@@ -4,4 +4,5 @@
   (lib (name CoE_IntegratedCircuit)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_IntegratedCircuit.lib)(options "")(descr "Integrated Circuits as CoEnzymes"))
   (lib (name CoE-Transistor)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE-Transistor.lib)(options "")(descr "Transistors as CoEnzymes"))
   (lib (name CoE_Diode)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_Diode.lib)(options "")(descr ""))
+  (lib (name CoE_Clock)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_Clock.lib)(options "")(descr ""))
 )
