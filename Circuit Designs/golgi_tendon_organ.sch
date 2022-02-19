@@ -4735,16 +4735,260 @@ EndData
 $EndBitmap
 Text Notes 2400 1700 0    39   ~ 0
 The motor system requires sensory input in order to function properly. \n\nIn addition to sensory information about the external environment, the \n\nmotor system also requires sensory information about the current state \n\nof the muscles and limbs themselves. Proprioception is the sense of the \n\nbody’s position in space based on specialized receptors that reside in \n\nthe muscles and tendons. The muscle spindle signals the length of a \n\nmuscle and changes in the length of a muscle. The Golgi tendon organ \n\nsignals the amount of force being applied to a muscle.\n\n
-Text HLabel 3800 3750 0    50   Input ~ 0
+Text HLabel 4050 3300 0    50   Input ~ 0
 ENC_MISO
-Text HLabel 3800 3850 0    50   Input ~ 0
+Text HLabel 4050 3500 0    50   Input ~ 0
 ENC_nCS
-Text HLabel 3800 3650 0    50   Input ~ 0
+Text HLabel 4050 3400 0    50   Input ~ 0
 ENC_SCK
-Text HLabel 3800 3950 0    50   Input ~ 0
+Text HLabel 4050 3200 0    50   Input ~ 0
 ENC_MOSI
-Text HLabel 3800 3550 0    50   Input ~ 0
+Text HLabel 4050 2800 0    50   Input ~ 0
 ENC_PWR
-Text HLabel 3800 4050 0    50   Input ~ 0
+Text HLabel 4050 4100 0    50   Input ~ 0
 ENC_GND
+$Comp
+L CoE_IntegratedCircuit:AS5047P U?
+U 1 1 62126042
+P 5750 3500
+F 0 "U?" H 5850 2950 50  0000 L CNN
+F 1 "AS5047P" H 5850 3050 39  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5750 4400 50  0001 C CNN
+F 3 "https://ams.com/documents/20143/36005/AS5047P_DS000324_3-00.pdf" H 5000 2950 50  0001 C CNN
+F 4 "AS5047P-ATSM" H 5750 2600 50  0001 C CNN "MFR Part #"
+F 5 "AS5047P-ATSMCT-ND" H 5750 2500 50  0001 C CNN "Digikey Part #"
+F 6 "2009463" H 5750 2400 50  0001 C CNN "RS Components Part #"
+	1    5750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 621A0C33
+P 4900 3000
+F 0 "R?" H 4950 3050 50  0000 L CNN
+F 1 "10K" H 4950 2950 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4900 3400 50  0001 C BNN
+F 3 "~" H 4550 2850 50  0001 C CNN
+F 4 "1%" V 4900 3000 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 4900 2575 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 4900 2475 50  0001 C CNN "JLCPCB Part #"
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 621A3389
+P 4550 3000
+F 0 "R?" H 4600 3050 50  0000 L CNN
+F 1 "10K" H 4600 2950 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4550 3400 50  0001 C BNN
+F 3 "~" H 4200 2850 50  0001 C CNN
+F 4 "1%" V 4550 3000 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 4550 2575 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 4550 2475 50  0001 C CNN "JLCPCB Part #"
+	1    4550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 621A39EC
+P 4200 3000
+F 0 "R?" H 4250 3050 50  0000 L CNN
+F 1 "10K" H 4250 2950 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4200 3400 50  0001 C BNN
+F 3 "~" H 3850 2850 50  0001 C CNN
+F 4 "1%" V 4200 3000 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 4200 2575 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 4200 2475 50  0001 C CNN "JLCPCB Part #"
+	1    4200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3200 4200 3200
+Wire Wire Line
+	4050 3300 4550 3300
+Wire Wire Line
+	4050 3400 4900 3400
+Wire Wire Line
+	4050 3500 4900 3500
+Wire Wire Line
+	5250 3700 5200 3700
+Wire Wire Line
+	5200 3700 5200 2800
+Wire Wire Line
+	5200 2800 4900 2800
+Wire Wire Line
+	4200 2850 4200 2800
+Connection ~ 4200 2800
+Wire Wire Line
+	4200 2800 4050 2800
+Wire Wire Line
+	4550 2850 4550 2800
+Connection ~ 4550 2800
+Wire Wire Line
+	4550 2800 4200 2800
+Wire Wire Line
+	4900 2850 4900 2800
+Connection ~ 4900 2800
+Wire Wire Line
+	4900 2800 4550 2800
+Wire Wire Line
+	5200 2800 5750 2800
+Wire Wire Line
+	5750 2800 5750 3000
+Connection ~ 5200 2800
+Wire Wire Line
+	4200 3150 4200 3200
+Connection ~ 4200 3200
+Wire Wire Line
+	4200 3200 5250 3200
+Wire Wire Line
+	4550 3150 4550 3300
+Connection ~ 4550 3300
+Wire Wire Line
+	4550 3300 5250 3300
+Wire Wire Line
+	4900 3150 4900 3400
+Connection ~ 4900 3400
+Wire Wire Line
+	4900 3400 5250 3400
+$Comp
+L CoE_Resistor:10K R?
+U 1 1 621A8BCF
+P 4900 3700
+F 0 "R?" H 4950 3750 50  0000 L CNN
+F 1 "10K" H 4950 3650 39  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4900 4100 50  0001 C BNN
+F 3 "~" H 4550 3550 50  0001 C CNN
+F 4 "1%" V 4900 3700 28  0000 C CNN "Tolerance"
+F 5 "0402WGF1002TCE" H 4900 3275 50  0001 C CNN "MFR. Part #"
+F 6 "C25744" H 4900 3175 50  0001 C CNN "JLCPCB Part #"
+	1    4900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3550 4900 3500
+Connection ~ 4900 3500
+Wire Wire Line
+	4900 3500 5250 3500
+Wire Wire Line
+	4050 4100 4900 4100
+Wire Wire Line
+	5750 4100 5750 4000
+Wire Wire Line
+	5250 3800 5200 3800
+Wire Wire Line
+	5200 3800 5200 4100
+Connection ~ 5200 4100
+Wire Wire Line
+	5200 4100 5750 4100
+Wire Wire Line
+	4900 3850 4900 4100
+Connection ~ 4900 4100
+Wire Wire Line
+	4900 4100 5200 4100
+NoConn ~ 6250 3800
+NoConn ~ 6250 3700
+NoConn ~ 6250 3600
+NoConn ~ 6250 3400
+NoConn ~ 6250 3300
+NoConn ~ 6250 3200
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 621AC1A3
+P 6650 3500
+F 0 "C?" H 6675 3600 50  0000 L CNN
+F 1 "1uF" H 6675 3400 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6650 3900 50  0001 C BNN
+F 3 "~" H 6650 3500 50  0001 C CNN
+F 4 "25V" H 6650 3500 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 6650 3075 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 6650 2975 50  0001 C CNN "JLCPCB Part #"
+	1    6650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 621ACADD
+P 7250 3500
+F 0 "C?" H 7275 3600 50  0000 L CNN
+F 1 "100nF" H 7275 3400 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7250 3900 50  0001 C BNN
+F 3 "~" H 7250 3500 50  0001 C CNN
+F 4 "50V" H 7250 3500 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 7250 3075 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 7250 2975 50  0001 C CNN "JLCPCB Part #"
+	1    7250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:1uF C?
+U 1 1 621ACEAF
+P 6950 3500
+F 0 "C?" H 6975 3600 50  0000 L CNN
+F 1 "1uF" H 6975 3400 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6950 3900 50  0001 C BNN
+F 3 "~" H 6950 3500 50  0001 C CNN
+F 4 "25V" H 6950 3500 28  0000 C CNN "Voltage"
+F 5 "CL05A105KA5NQNC" H 6950 3075 50  0001 C CNN "MFR. Part #"
+F 6 "C52923" H 6950 2975 50  0001 C CNN "JLCPCB Part #"
+	1    6950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 621ADB34
+P 7550 3500
+F 0 "C?" H 7575 3600 50  0000 L CNN
+F 1 "100nF" H 7575 3400 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7550 3900 50  0001 C BNN
+F 3 "~" H 7550 3500 50  0001 C CNN
+F 4 "50V" H 7550 3500 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 7550 3075 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 7550 2975 50  0001 C CNN "JLCPCB Part #"
+	1    7550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3350 6650 2800
+Wire Wire Line
+	6650 2800 5750 2800
+Connection ~ 5750 2800
+Wire Wire Line
+	6650 2800 6950 2800
+Wire Wire Line
+	6950 2800 6950 3350
+Connection ~ 6650 2800
+Wire Wire Line
+	6950 2800 7250 2800
+Wire Wire Line
+	7250 2800 7250 3350
+Connection ~ 6950 2800
+Wire Wire Line
+	7250 2800 7550 2800
+Wire Wire Line
+	7550 2800 7550 3350
+Connection ~ 7250 2800
+Wire Wire Line
+	6650 3650 6650 4100
+Wire Wire Line
+	6650 4100 5750 4100
+Connection ~ 5750 4100
+Wire Wire Line
+	6950 3650 6950 4100
+Wire Wire Line
+	6950 4100 6650 4100
+Connection ~ 6650 4100
+Wire Wire Line
+	7250 3650 7250 4100
+Wire Wire Line
+	7250 4100 6950 4100
+Connection ~ 6950 4100
+Wire Wire Line
+	7550 3650 7550 4100
+Wire Wire Line
+	7550 4100 7250 4100
+Connection ~ 7250 4100
+Text Notes 4550 2750 0    39   ~ 0
+In 3.3V operation, VDD and VREG must be tied together. @page 9
 $EndSCHEMATC
