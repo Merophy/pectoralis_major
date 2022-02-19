@@ -6,4 +6,5 @@
   (lib (name CoE_Diode)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_Diode.lib)(options "")(descr "Diodes as CoEnzymes"))
   (lib (name CoE_Clock)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_Clock.lib)(options "")(descr "Clock Sources as CoEnzymes"))
   (lib (name CoE_Inductor)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_Inductor.lib)(options "")(descr "Inductors as CoEnzymes"))
+  (lib (name CoE_Connector)(type Legacy)(uri ${KIPRJMOD}/enzyme/kiCad-symbols/CoE_Connector.lib)(options "")(descr ""))
 )
