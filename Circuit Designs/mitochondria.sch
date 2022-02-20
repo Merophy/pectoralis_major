@@ -3304,4 +3304,6 @@ $EndComp
 Wire Wire Line
 	9650 1200 9650 1150
 Connection ~ 9650 1150
+Text Notes 1550 800  0    28   ~ 0
+(13.2 / 3.2 ) * 0.8 = 3.3V
 $EndSCHEMATC

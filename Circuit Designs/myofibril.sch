@@ -64,7 +64,7 @@ F 3 "" H 2600 5900 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Text Notes 3150 5850 0    39   ~ 0
-fc: 80 KHz\n
+fc: 95 KHz\n
 Text HLabel 3100 5950 3    50   Input ~ 0
 CURR_A
 Wire Wire Line
@@ -162,17 +162,6 @@ Wire Wire Line
 Connection ~ 1250 7050
 Wire Wire Line
 	1250 7050 1250 7100
-$Comp
-L power:GND #PWR?
-U 1 1 620C3D07
-P 1250 7400
-F 0 "#PWR?" H 1250 7150 50  0001 C CNN
-F 1 "GND" H 1250 7250 50  0000 C CNN
-F 2 "" H 1250 7400 50  0001 C CNN
-F 3 "" H 1250 7400 50  0001 C CNN
-	1    1250 7400
-	1    0    0    -1  
-$EndComp
 Text Notes 1500 6850 0    39   ~ 0
 The NTC should place as close as \npossible to the MOSFETs
 Text HLabel 2450 3350 3    50   Input ~ 0
@@ -1048,7 +1037,7 @@ F 3 "" H 5100 5900 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Text Notes 5650 5850 0    39   ~ 0
-fc: 80 KHz\n
+fc: 95 KHz\n
 Wire Wire Line
 	5500 4000 5500 4300
 Wire Wire Line
@@ -1338,7 +1327,7 @@ F 3 "" H 7600 5900 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 Text Notes 8150 5850 0    39   ~ 0
-fc: 80 KHz\n
+fc: 95 KHz\n
 Wire Wire Line
 	8000 4000 8000 4300
 Wire Wire Line
@@ -1848,4 +1837,44 @@ Wire Wire Line
 	5100 1950 5850 1950
 Wire Wire Line
 	7600 1950 8350 1950
+$Comp
+L CoE_Capacitor:100nF C?
+U 1 1 6255591C
+P 1600 7250
+F 0 "C?" H 1625 7350 50  0000 L CNN
+F 1 "100nF" H 1625 7150 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1600 7650 50  0001 C BNN
+F 3 "~" H 1600 7250 50  0001 C CNN
+F 4 "50V" H 1600 7250 28  0000 C CNN "Voltage"
+F 5 "CL05B104KB54PNC" H 1600 6825 50  0001 C CNN "MFR. Part #"
+F 6 "C307331" H 1600 6725 50  0001 C CNN "JLCPCB Part #"
+	1    1600 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 7100 1600 7050
+Wire Wire Line
+	1600 7050 1250 7050
+$Comp
+L power:GND #PWR?
+U 1 1 620C3D07
+P 1250 7400
+F 0 "#PWR?" H 1250 7150 50  0001 C CNN
+F 1 "GND" H 1250 7250 50  0000 C CNN
+F 2 "" H 1250 7400 50  0001 C CNN
+F 3 "" H 1250 7400 50  0001 C CNN
+	1    1250 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 625729F4
+P 1600 7400
+F 0 "#PWR?" H 1600 7150 50  0001 C CNN
+F 1 "GND" H 1600 7250 50  0000 C CNN
+F 2 "" H 1600 7400 50  0001 C CNN
+F 3 "" H 1600 7400 50  0001 C CNN
+	1    1600 7400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
