@@ -63,7 +63,6 @@ Wire Wire Line
 	6700 4200 6650 4200
 Wire Wire Line
 	6700 4100 6650 4100
-NoConn ~ 6650 4000
 Wire Wire Line
 	6700 3900 6650 3900
 Wire Wire Line
@@ -2357,4 +2356,8 @@ Wire Wire Line
 	6150 1500 6150 1200
 Wire Wire Line
 	6250 1500 6250 1300
+Wire Wire Line
+	6700 4000 6650 4000
+Text HLabel 6700 4000 2    50   Input ~ 0
+SERVO
 $EndSCHEMATC

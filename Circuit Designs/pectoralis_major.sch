@@ -14,7 +14,7 @@ Comment3 "at the deltopectoral crest."
 Comment4 "The pectoralis is a large muscle that attaches to the humerus of the wing "
 $EndDescr
 $Sheet
-S 2000 3200 1000 600 
+S 2000 3200 1000 800 
 U 620003D1
 F0 "communication" 50
 F1 "neuromuscular_junction.sch" 50
@@ -26,6 +26,8 @@ F6 "CANH" I L 2000 3600 50
 F7 "CANL" I L 2000 3700 50 
 F8 "CANTX" I R 3000 3600 50 
 F9 "CANRX" I R 3000 3700 50 
+F10 "PWM_IN" I L 2000 3900 50 
+F11 "DC_OUT" I R 3000 3900 50 
 $EndSheet
 $Sheet
 S 8500 1800 1000 2850
@@ -89,6 +91,7 @@ F28 "CURRENT3" I R 5500 4400 50
 F29 "CURRENT2" I R 5500 4300 50 
 F30 "CURRENT1" I R 5500 4200 50 
 F31 "CURR_FILTER" I R 5500 4050 50 
+F32 "SERVO" I L 4000 3900 50 
 $EndSheet
 $Sheet
 S 6500 1050 1000 2650
@@ -330,21 +333,16 @@ Wire Wire Line
 Wire Wire Line
 	1100 3800 1000 3800
 Connection ~ 1100 3100
-Wire Wire Line
-	1100 3800 1100 3900
-Wire Wire Line
-	1100 3900 1000 3900
 Connection ~ 1100 3800
-Connection ~ 1100 3900
 $Comp
 L power:GND #PWR?
 U 1 1 61DA921D
-P 1150 3900
-F 0 "#PWR?" H 1150 3650 50  0001 C CNN
-F 1 "GND" V 1150 3700 50  0000 C CNN
-F 2 "" H 1150 3900 50  0001 C CNN
-F 3 "" H 1150 3900 50  0001 C CNN
-	1    1150 3900
+P 1150 3800
+F 0 "#PWR?" H 1150 3550 50  0001 C CNN
+F 1 "GND" V 1150 3600 50  0000 C CNN
+F 2 "" H 1150 3800 50  0001 C CNN
+F 3 "" H 1150 3800 50  0001 C CNN
+	1    1150 3800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -1051,7 +1049,7 @@ F 6 "538-53307-1071" H 850 1750 50  0001 C CNN "Mouser Part #"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 3900 1100 3900
+	1150 3800 1100 3800
 Wire Wire Line
 	1200 2950 1200 3300
 Connection ~ 1200 3300
@@ -17670,4 +17668,8 @@ F 3 "" H 7800 5100 50  0001 C CNN
 	1    7800 5100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3000 3900 4000 3900
+Wire Wire Line
+	1000 3900 2000 3900
 $EndSCHEMATC
