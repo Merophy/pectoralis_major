@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name CoE_Capacitor)(type KiCad)(uri ${KIPRJMOD}/enzyme/kiCad-footprints/CoE_Capacitor.pretty)(options "")(descr ""))
+  (lib (name "CoF_Capacitor")(type "KiCad")(uri "${KIPRJMOD}/enzyme/kiCad-footprints/CoF_Capacitor.pretty")(options "")(descr ""))
+  (lib (name "CoF_Resistor")(type "KiCad")(uri "${KIPRJMOD}/enzyme/kiCad-footprints/CoF_Resistor.pretty")(options "")(descr ""))
 )
