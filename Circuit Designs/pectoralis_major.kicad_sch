@@ -13641,55 +13641,55 @@
       (reference "C157") (unit 1) (value "100nF") (footprint "CoF_Capacitor:C-0402")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ff92"
-      (reference "D1") (unit 1) (value "LED_A") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D1") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ff9c"
-      (reference "D2") (unit 1) (value "LED_R") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D2") (unit 1) (value "LED_R") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ffa6"
-      (reference "D3") (unit 1) (value "LED_A") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D3") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ffb0"
-      (reference "D4") (unit 1) (value "LED_R") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D4") (unit 1) (value "LED_R") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ffba"
-      (reference "D5") (unit 1) (value "LED_A") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D5") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ffc4"
-      (reference "D6") (unit 1) (value "LED_R") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D6") (unit 1) (value "LED_R") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ffce"
-      (reference "D7") (unit 1) (value "LED_A") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D7") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ffd8"
-      (reference "D8") (unit 1) (value "LED_R") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D8") (unit 1) (value "LED_R") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ffe2"
-      (reference "D9") (unit 1) (value "LED_A") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D9") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ffec"
-      (reference "D10") (unit 1) (value "LED_R") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D10") (unit 1) (value "LED_R") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271fff6"
-      (reference "D11") (unit 1) (value "LED_A") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D11") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-000062720000"
-      (reference "D12") (unit 1) (value "LED_R") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D12") (unit 1) (value "LED_R") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006272000a"
-      (reference "D13") (unit 1) (value "LED_A") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D13") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006271ff88"
-      (reference "D14") (unit 1) (value "LED_R") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D14") (unit 1) (value "LED_R") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-000062720014"
-      (reference "D15") (unit 1) (value "LED_A") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D15") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006272001e"
-      (reference "D16") (unit 1) (value "LED_R") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D16") (unit 1) (value "LED_R") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-000062720028"
-      (reference "D17") (unit 1) (value "LED_A") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D17") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004ef/00000000-0000-0000-0000-000062327090"
       (reference "D18") (unit 1) (value "B5819W") (footprint "Diode_SMD:D_SOD-123")
@@ -13938,13 +13938,13 @@
       (reference "R70") (unit 1) (value "1R") (footprint "CoF_Resistor:R-0402")
     )
     (path "/00000000-0000-0000-0000-000062000433/00000000-0000-0000-0000-000062092fad"
-      (reference "R71") (unit 1) (value "2mR") (footprint "Resistor_SMD:R_1206_3216Metric")
+      (reference "R71") (unit 1) (value "2mR") (footprint "CoF_Resistor:R-1206")
     )
     (path "/00000000-0000-0000-0000-000062000433/00000000-0000-0000-0000-000062165e8d"
-      (reference "R72") (unit 1) (value "2mR") (footprint "Resistor_SMD:R_1206_3216Metric")
+      (reference "R72") (unit 1) (value "2mR") (footprint "CoF_Resistor:R-1206")
     )
     (path "/00000000-0000-0000-0000-000062000433/00000000-0000-0000-0000-00006217c99c"
-      (reference "R73") (unit 1) (value "2mR") (footprint "Resistor_SMD:R_1206_3216Metric")
+      (reference "R73") (unit 1) (value "2mR") (footprint "CoF_Resistor:R-1206")
     )
     (path "/00000000-0000-0000-0000-000062000433/00000000-0000-0000-0000-0000620a79c9"
       (reference "R74") (unit 1) (value "1R") (footprint "CoF_Resistor:R-0402")
