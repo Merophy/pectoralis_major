@@ -13692,7 +13692,7 @@
       (reference "D17") (unit 1) (value "LED_A") (footprint "CoF_Diode:LED-0603")
     )
     (path "/00000000-0000-0000-0000-0000620004ef/00000000-0000-0000-0000-000062327090"
-      (reference "D18") (unit 1) (value "B5819W") (footprint "Diode_SMD:D_SOD-123")
+      (reference "D18") (unit 1) (value "B5819W") (footprint "CoF_Diode:SOD-123")
     )
     (path "/00000000-0000-0000-0000-000062160035"
       (reference "J1") (unit 1) (value "0524651671") (footprint "")
