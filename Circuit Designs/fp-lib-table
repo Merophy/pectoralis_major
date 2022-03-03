@@ -2,4 +2,5 @@
   (lib (name "CoF_Capacitor")(type "KiCad")(uri "${KIPRJMOD}/enzyme/kiCad-footprints/CoF_Capacitor.pretty")(options "")(descr ""))
   (lib (name "CoF_Resistor")(type "KiCad")(uri "${KIPRJMOD}/enzyme/kiCad-footprints/CoF_Resistor.pretty")(options "")(descr ""))
   (lib (name "CoF_Diode")(type "KiCad")(uri "${KIPRJMOD}/enzyme/kiCad-footprints/CoF_Diode.pretty")(options "")(descr ""))
+  (lib (name "CoF_SmallOutline")(type "KiCad")(uri "${KIPRJMOD}/enzyme/kiCad-footprints/CoF_SmallOutline.pretty")(options "")(descr ""))
 )

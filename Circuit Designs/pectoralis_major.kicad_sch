@@ -14013,22 +14013,22 @@
       (reference "TP3") (unit 1) (value "C") (footprint "TestPoint:TestPoint_Keystone_5019_Minature")
     )
     (path "/00000000-0000-0000-0000-0000620003d1/00000000-0000-0000-0000-00006298bc95"
-      (reference "U1") (unit 1) (value "TCAN330") (footprint "Package_TO_SOT_SMD:TSOT-23-8")
+      (reference "U1") (unit 1) (value "TCAN330") (footprint "CoF_SmallOutline:TSOT-23-8")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006217e976"
       (reference "U2") (unit 1) (value "STM32F405RGTx") (footprint "Package_QFP:LQFP-64_10x10mm_P0.5mm")
     )
     (path "/00000000-0000-0000-0000-0000620004ef/00000000-0000-0000-0000-000062182096"
-      (reference "U3") (unit 1) (value "AP2127") (footprint "Package_TO_SOT_SMD:SOT-23-5")
+      (reference "U3") (unit 1) (value "AP2127") (footprint "CoF_SmallOutline:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-0000620004ef/00000000-0000-0000-0000-00006245f057"
-      (reference "U4") (unit 1) (value "AP2127") (footprint "Package_TO_SOT_SMD:SOT-23-5")
+      (reference "U4") (unit 1) (value "AP2127") (footprint "CoF_SmallOutline:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-0000620004ef/00000000-0000-0000-0000-0000628219eb"
-      (reference "U5") (unit 1) (value "AP2127") (footprint "Package_TO_SOT_SMD:SOT-23-5")
+      (reference "U5") (unit 1) (value "AP2127") (footprint "CoF_SmallOutline:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-0000620004ef/00000000-0000-0000-0000-000062a0b4d7"
-      (reference "U6") (unit 1) (value "AP2127") (footprint "Package_TO_SOT_SMD:SOT-23-5")
+      (reference "U6") (unit 1) (value "AP2127") (footprint "CoF_SmallOutline:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-0000620004ef/00000000-0000-0000-0000-00006213c42f"
       (reference "U7") (unit 1) (value "DRV8301") (footprint "Package_SO:HTSSOP-56-1EP_6.1x14mm_P0.5mm_EP3.61x6.35mm")
