@@ -13713,10 +13713,10 @@
       (reference "L1") (unit 1) (value "22uH") (footprint "Inductor_SMD:L_Taiyo-Yuden_NR-60xx")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-0000624faa02"
-      (reference "Q1") (unit 1) (value "AO3400A") (footprint "Package_TO_SOT_SMD:TSOT-23")
+      (reference "Q1") (unit 1) (value "AO3400A") (footprint "CoF_SmallOutline:SOT-23")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-0000624c3da8"
-      (reference "Q2") (unit 1) (value "AO3400A") (footprint "Package_TO_SOT_SMD:TSOT-23")
+      (reference "Q2") (unit 1) (value "AO3400A") (footprint "CoF_SmallOutline:SOT-23")
     )
     (path "/00000000-0000-0000-0000-000062000433/00000000-0000-0000-0000-0000620ac593"
       (reference "Q3") (unit 1) (value "CSD87384M") (footprint "")
@@ -14031,16 +14031,16 @@
       (reference "U6") (unit 1) (value "AP2127") (footprint "CoF_SmallOutline:SOT-23-5")
     )
     (path "/00000000-0000-0000-0000-0000620004ef/00000000-0000-0000-0000-00006213c42f"
-      (reference "U7") (unit 1) (value "DRV8301") (footprint "Package_SO:HTSSOP-56-1EP_6.1x14mm_P0.5mm_EP3.61x6.35mm")
+      (reference "U7") (unit 1) (value "DRV8301") (footprint "CoF_SmallOutline:HTSSOP-56-EP")
     )
     (path "/00000000-0000-0000-0000-000062000433/00000000-0000-0000-0000-0000620d7e37"
-      (reference "U8") (unit 1) (value "INA199A1") (footprint "Package_TO_SOT_SMD:Texas_R-PDSO-G6")
+      (reference "U8") (unit 1) (value "INA199A1") (footprint "CoF_SmallOutline:SOT-363")
     )
     (path "/00000000-0000-0000-0000-000062000433/00000000-0000-0000-0000-000062265fa0"
-      (reference "U9") (unit 1) (value "INA199A1") (footprint "Package_TO_SOT_SMD:Texas_R-PDSO-G6")
+      (reference "U9") (unit 1) (value "INA199A1") (footprint "CoF_SmallOutline:SOT-363")
     )
     (path "/00000000-0000-0000-0000-000062000433/00000000-0000-0000-0000-0000622b7519"
-      (reference "U10") (unit 1) (value "INA199A1") (footprint "Package_TO_SOT_SMD:Texas_R-PDSO-G6")
+      (reference "U10") (unit 1) (value "INA199A1") (footprint "CoF_SmallOutline:SOT-363")
     )
     (path "/00000000-0000-0000-0000-00006222d8e1/00000000-0000-0000-0000-000062126042"
       (reference "U11") (unit 1) (value "AS5047P") (footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm")
