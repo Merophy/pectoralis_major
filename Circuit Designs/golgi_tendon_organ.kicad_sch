@@ -128,7 +128,7 @@
       (property "Value" "AS5047P" (id 1) (at 2.54 -11.43 0)
         (effects (font (size 0.9906 0.9906)) (justify left))
       )
-      (property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" (id 2) (at 0 22.86 0)
+      (property "Footprint" "CoF_SmallOutline:TSSOP-14" (id 2) (at 0 22.86 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "https://ams.com/documents/20143/36005/AS5047P_DS000324_3-00.pdf" (id 3) (at 0 -30.48 0)

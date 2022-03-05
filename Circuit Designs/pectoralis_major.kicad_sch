@@ -14043,7 +14043,7 @@
       (reference "U10") (unit 1) (value "INA199A1") (footprint "CoF_SmallOutline:SOT-363")
     )
     (path "/00000000-0000-0000-0000-00006222d8e1/00000000-0000-0000-0000-000062126042"
-      (reference "U11") (unit 1) (value "AS5047P") (footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm")
+      (reference "U11") (unit 1) (value "AS5047P") (footprint "CoF_SmallOutline:TSSOP-14")
     )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006213a35e"
       (reference "Y1") (unit 1) (value "CSTNE8M00") (footprint "")
