@@ -12773,9 +12773,6 @@
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-00006212db80"
       (reference "#PWR068") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-000061d1933a"
-      (reference "#PWR069") (unit 1) (value "+3.3VA") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-0000620004b5/00000000-0000-0000-0000-0000620c3cd3"
       (reference "#PWR070") (unit 1) (value "GND") (footprint "")
     )
@@ -13168,6 +13165,9 @@
     )
     (path "/00000000-0000-0000-0000-0000620004b5/3b6d5423-293c-421b-b57a-972f3b15b042"
       (reference "#PWR?") (unit 1) (value "+3.3VA") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-0000620004b5/e72e899e-3141-44e8-9d4f-2a36fc977442"
+      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000062214450"
       (reference "C1") (unit 1) (value "22uF") (footprint "CoF_Capacitor:C-0805")
